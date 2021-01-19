@@ -1,5 +1,12 @@
 //model
 const model = {
+waitor: {
+    name: [
+        {name: 'Henrik', isSelected: true},
+        {name: 'Flemming', isSelected: false},
+        {name: 'Sindre', isSelected: false},
+    ],   
+},
 
 category: {
     varamretter: {
@@ -58,21 +65,11 @@ category: {
     },
 
     leggtilny: {
-        legg til ny : {
+        leggtilny : {
             ingredients: [
                 {ingredients: 'legg til ny', isSelected: true },
              ],
         },
     },
 },
-
-
-orderWaiter
--navn på retten
--kommentar på retten
--checkbox
-
-orderCook
--navn på retten
--kommentar på retten
--checkbox
+}
