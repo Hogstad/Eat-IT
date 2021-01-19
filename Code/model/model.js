@@ -12,16 +12,16 @@ const model = {
                 mainCourse: {
                     taco: {
                         ingredients: [
-                            {ingredients: 'Kjøttdeig', isSelected: true },
-                            {ingredients: 'tacokrydder', isSelected: true },
-                            {ingredients: 'tortilla', isSelected: true },
-                            {ingredients: 'isbergsalat', isSelected: true },
-                            {ingredients: 'slangeagurk', isSelected: true },
-                            {ingredients: 'tomater', isSelected: true },
-                            {ingredients: 'tomater', isSelected: true },
-                            {ingredients: 'mais', isSelected: true },
-                            {ingredients: 'gulost', isSelected: true },
-                            {ingredients: 'rømme', isSelected: true },
+                            {name: 'Kjøttdeig', isSelected: true },
+                            {name: 'tacokrydder', isSelected: true },
+                            {name: 'tortilla', isSelected: true },
+                            {name: 'isbergsalat', isSelected: true },
+                            {name: 'slangeagurk', isSelected: true },
+                            {name: 'tomater', isSelected: true },
+                            {name: 'tomater', isSelected: true },
+                            {name: 'mais', isSelected: true },
+                            {name: 'gulost', isSelected: true },
+                            {name: 'rømme', isSelected: true },
                         ],
                     },
                     
@@ -29,19 +29,19 @@ const model = {
         salad: {
                 tacoSalad : {
                     ingredients: [
-                        {ingredients: 'karbonadedeig', isSelected: true },
-                        {ingredients: 'hvitløk', isSelected: true },
-                        {ingredients: 'olje', isSelected: true },
-                        {ingredients: 'tacokrydder', isSelected: true },
-                        {ingredients: 'vann', isSelected: true },
-                        {ingredients: 'røde bønner', isSelected: true },
-                        {ingredients: 'rødløk', isSelected: true },
-                        {ingredients: 'sitron', isSelected: true },
-                        {ingredients: 'hjertesalat', isSelected: true },
-                        {ingredients: 'tortillachips', isSelected: true },
-                        {ingredients: 'vårløk', isSelected: true },
-                        {ingredients: 'jalapeñog', isSelected: true },
-                        {ingredients: 'frisk koriander', isSelected: true },
+                        {name: 'karbonadedeig', isSelected: true },
+                        {name: 'hvitløk', isSelected: true },
+                        {name: 'olje', isSelected: true },
+                        {name: 'tacokrydder', isSelected: true },
+                        {name: 'vann', isSelected: true },
+                        {name: 'røde bønner', isSelected: true },
+                        {name: 'rødløk', isSelected: true },
+                        {name: 'sitron', isSelected: true },
+                        {name: 'hjertesalat', isSelected: true },
+                        {name: 'tortillachips', isSelected: true },
+                        {name: 'vårløk', isSelected: true },
+                        {name: 'jalapeñog', isSelected: true },
+                        {name: 'frisk koriander', isSelected: true },
                     ],
                 },
                 
@@ -50,7 +50,7 @@ const model = {
         dessert: {
                 dessert : {
                     ingredients: [
-                        {ingredients: 'dessert', isSelected: true },
+                        {name: 'dessert', isSelected: true },
                     ],
                 },
                 
@@ -59,7 +59,7 @@ const model = {
         drinks: {
                 drinks : {
                     ingredients: [
-                        {ingredients: 'drikke', isSelected: true },
+                        {name: 'drikke', isSelected: true },
                     ],
                 },
         },
@@ -67,7 +67,7 @@ const model = {
         addNew: {
                 addNew : {
                     ingredients: [
-                        {ingredients: 'legg til ny', isSelected: true },
+                        {name: 'legg til ny', isSelected: true },
                     ],
                 },
         },
