@@ -10,6 +10,15 @@ function mainView() {
            <button>Legg til ny bruker</button>
            <button>Ordre</button>
            <ul>`;
+           for(let i = 0; i < model.category.length; i++) {
+               if(model.category[0] === "varmretter") {
+                   model.category[0] = model.category.ingredients.name;
+               }
+               html += `
+                       <div>${model.category.ingredients[i].name}</div>
+               `;
+
+           }
            
 
     //        <li> <button>Varmretter</button </li>
