@@ -6,37 +6,21 @@ mainView();
 function mainView() {
     let html = "";
     html += `
-           <button>Servitør</button>
-           <button>Legg til ny bruker</button>
-           <button>Ordre</button>
-           <ul>`;
-           for(let i = 0; i < model.category.length; i++) {
-               if(model.category[0] === "varmretter") {
-                   model.category[0] = model.category.ingredients.name;
-               }
-               html += `
-                       <div>${model.category.ingredients[i].name}</div>
+            <button>Servitør</button>
+            <button>Legg til ny bruker</button>
+            <button>Ordre</button>`;
+            
+            for(let i = 0; i < model.category.length; i++) {
+                html += `
+                    <button>${model.category[i].type}</button>
                `;
-
-           }
-           
-
-    //        <li> <button>Varmretter</button </li>
-    //        <li> <button>Salat</button </li>
-    //        <li> <button>Dessert</button </li>
-    //        <li> <button>Drikke</button </li>
-    //        <li> <button>Legg til ny</button </li>
-           
-    //        </ul>
-
-    //        <h3>Taco:${model.category.mainCourse.taco.ingredients.length}</h3>
-                      
-
-    //        <button>Rediger</button>
-    //        <button>Legg til ny</button>
-           
-    
-    
-    
-    // divApp.innerHTML = html;
+            }
+            html +=`
+            
+            <button>Legg til ny</button>
+            <h3>Taco:</h3>
+            <button>Rediger</button>
+            
+           `;      
+    divApp.innerHTML = html;
 }
