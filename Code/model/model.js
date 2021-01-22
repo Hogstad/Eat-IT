@@ -9,10 +9,10 @@ const model = {
     },  
     category: [
         {
-            type: 'varmretter',
+            type: 'Varmretter',
             retter: [
                 {
-                    navn: 'taco',
+                    navn: 'Taco',
                     ingredients: [
                         {name: 'Kjøttdeig', isSelected: true },
                         {name: 'tacokrydder', isSelected: true },
@@ -29,7 +29,7 @@ const model = {
             ],
         },
         {
-            type: 'salat',
+            type: 'Salat',
             retter: [
                 {
                     navn: 'Taco Salat',
@@ -52,10 +52,10 @@ const model = {
             ],
         },
         {
-            type: 'dessert',
+            type: 'Dessert',
             retter: [
                 {
-                    navn: 'kake',
+                    navn: 'Kake',
                     ingredients: [
                         {name: 'kakemix', isSelected: true },
                         
@@ -64,7 +64,7 @@ const model = {
             ],
         },
         {
-            type: 'drinks',
+            type: 'Drinks',
             retter: [
                 {
                     navn: 'Melk',
