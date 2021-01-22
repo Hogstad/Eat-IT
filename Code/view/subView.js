@@ -11,7 +11,15 @@ function mainView() {
             
             for(let i = 0; i < model.category.length; i++) {
                 html += `
-                    <button>${model.category[i].type}</button>
+                    <button onclick="printCategory()">${model.category[i].type}</button>
                `;
+               printCategory(i);
             };
+            
+            divApp.innerHTML = html;
         }    
+
+        function printCategory(i) {
+            model.category[i].type = model.category[0].retter[0].navn;
+        }
+        
