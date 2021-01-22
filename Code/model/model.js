@@ -75,17 +75,5 @@ const model = {
                 },
             ],
         },
-        {
-            type: 'addnew',
-            retter: [
-                {
-                    navn: 'addnew',
-                    ingredients: [
-                        {name: 'addnew', isSelected: true },
-                        
-                    ],
-                },
-            ],
-        },
-    ]    
+    ],    
 }  
