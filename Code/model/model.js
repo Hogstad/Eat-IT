@@ -1,4 +1,6 @@
 //model
+const divApp = document.getElementById("app");
+
 const model = {
     waitor: {
         name: [
@@ -6,7 +8,10 @@ const model = {
             {name: 'Flemming', isSelected: false},
             {name: 'Sindre', isSelected: false},
         ],   
-    },  
+    },
+
+    showDishes: "", 
+    
     category: [
         {
             type: 'Varmretter',
