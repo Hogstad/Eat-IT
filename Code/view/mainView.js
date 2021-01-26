@@ -1,4 +1,4 @@
-const divApp = document.getElementById("app");
+
 mainView();
 function mainView() {
     let html = "";
