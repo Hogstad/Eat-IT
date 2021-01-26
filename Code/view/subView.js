@@ -19,14 +19,15 @@ function mainView() {
 
 //addfood
 //skisse
+
 const items = [], index;
 document.getElementById('app').onclick = function () {
     location.href = 'model.js';
 }
 for(let i = 0; i < model.category.retter.ingredients.length; i++) {
 model.category.retter.push(category.retter[index].ingredients 
-    ||  //start
-    model.category.retter.unshift(category.retter[i].ingredients));//slutt
+    ||                                                              //start
+    model.category.retter.unshift(category.retter[i].ingredients)); //slutt
 return items[index != '']; //?
 }
 
