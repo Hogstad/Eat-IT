@@ -24,4 +24,4 @@
 // -legge til en ny matrett inne på den valgte kategorien.
 
 // function checkbox
-// -checkbox til ordre siden.
+// -checkbox til ordre siden. 
