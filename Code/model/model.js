@@ -1,5 +1,5 @@
 //model
-
+const divApp = document.getElementById("app");
 
 const model = {
     waitor: {
