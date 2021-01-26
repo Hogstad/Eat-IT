@@ -5,10 +5,14 @@
 
 #mainViewShowDishes {
     position: relative;
-    background-color: green;
     top: -230px;
     left: 200px;
-    width: 200px;
+    width: 1400px;
+} 
+
+.dishDiv {
+    background-color: green;
+    width: 100%;
 }
 
 #mainViewButtons {
@@ -16,6 +20,10 @@
     background-color: pink;
     left: 150px;
     width: 250px;
+}
+
+.coloredButtons {
+    color: pink;
 }
 
 #mainViewCategory {
@@ -26,9 +34,9 @@
     height: 70px;
 }
 
-#midlertidig {
-    position: relative;
-    top: 350px;
-    z-index: 10;
 
-}
+/* .ingrDiv {
+    background-color: red;
+    clear: right;
+} */
+

@@ -5,16 +5,23 @@ function printCategory(index) {
     let html = "";
     for (let i = 0; i < model.category[index].retter.length; i++) {
         html += `
-            <h2>${model.category[index].retter[i].navn}</h2>
+            <div class="dishDiv">
+                <h2>${model.category[index].retter[i].navn}</h2><h4>
         `;
         for (let j = 0; j < model.category[index].retter[i].ingredients.length; j++) {
             html += `
-                <h4>${model.category[index].retter[i].ingredients[j].name}</h4>
+                ${model.category[index].retter[i].ingredients[j].name},  
             `;
         }
+        html += `
+            </h4>
+                <button class="coloredButtons">Rediger</button>
+                <button class="coloredButtons">Legg til ny</button>
+            </div>
+        `;
     }
     html += `
-        <button>Rediger</button>
+        
     `;
     model.showDishes = html;
     mainView();

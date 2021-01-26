@@ -7,8 +7,7 @@ function mainView() {
                 <button>Servitør</button>
                 <button>Legg til ny bruker</button>
                 <button>Ordre</button>
-            </div>
-                <button id="midlertidig">Legg til ny</button> 
+            </div> 
                 `;
             for(let i = 0; i < model.category.length; i++) {
                 html += `
