@@ -11,27 +11,36 @@
 } 
 
 .dishDiv {
-    background-color: green;
+    border-style: solid; 
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    background-color: white;
     width: 100%;
 }
 
 #mainViewButtons {
     position: absolute;
-    background-color: pink;
+    background-color: rgb(155, 155, 155);
     left: 150px;
     width: 250px;
+    
 }
 
 .coloredButtons {
-    color: pink;
+    color: rgb(0, 0, 0);
 }
 
 #mainViewCategory {
     position: relative;
-    background-color: pink;
+    background-color: rgb(155, 155, 155);
     top: 70px;
     width: 100px;
     height: 70px;
+    
+    
 }
 
 
