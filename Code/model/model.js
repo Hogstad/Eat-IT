@@ -30,7 +30,21 @@ const model = {
                         {name: 'gulost', isSelected: true },
                         {name: 'rømme', isSelected: true },
                     ],
-                },   
+                 
+                
+                    navn: 'Fersk vårruller med kylling',
+                    ingredients: [
+                        {name: 'kyllingfilet', isSelected: true },
+                        {name: 'gulrot', isSelected: true },
+                        {name: 'rød spisskål', isSelected: true },
+                        {name: 'vårløk', isSelected: true },
+                        {name: 'agurk', isSelected: true },
+                        {name: 'hjertesalat', isSelected: true },
+                        {name: 'koriander', isSelected: true },
+                        {name: 'salt', isSelected: true },
+                        {name: 'peppermiks', isSelected: true },
+                    ],
+                },  
             ],
         },
         {
