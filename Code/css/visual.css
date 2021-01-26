@@ -1,0 +1,34 @@
+.app {
+    padding: 0;
+    margin: 0;
+}
+
+#mainViewShowDishes {
+    position: relative;
+    background-color: green;
+    top: -230px;
+    left: 200px;
+    width: 200px;
+}
+
+#mainViewButtons {
+    position: absolute;
+    background-color: pink;
+    left: 150px;
+    width: 250px;
+}
+
+#mainViewCategory {
+    position: relative;
+    background-color: pink;
+    top: 70px;
+    width: 100px;
+    height: 70px;
+}
+
+#midlertidig {
+    position: relative;
+    top: 350px;
+    z-index: 10;
+
+}

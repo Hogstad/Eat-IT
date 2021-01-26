@@ -15,7 +15,6 @@ function printCategory(index) {
     }
     html += `
         <button>Rediger</button>
-        <button>Legg til ny</button>
     `;
     model.showDishes = html;
     mainView();
