@@ -17,6 +17,9 @@ function mainView() {
                `;
             };
             html += `
+            <button id="addCategory">Legg til</button>
+            `;
+            html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
             `;
         divApp.innerHTML = html;
