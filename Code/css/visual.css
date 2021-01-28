@@ -13,13 +13,13 @@
 .dishDiv {
     border-style: solid; 
     border-radius: 25px;
-    margin: 2px;
     border: 2px solid #000000;
-    padding: 20px;
+    padding-left: 10px;
+    padding-bottom: 15px;
     width: 200px;
     height: 125px;
     background-color: white;
-    width: 50%;
+    width: 65%;
 }
 
 #mainViewButtons {
