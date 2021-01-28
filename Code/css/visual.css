@@ -24,7 +24,7 @@
 }
 
 #mainViewButtons {
-    position: absolute;
+    position: relative;
     background-color: rgb(155, 155, 155);
     left: 150px;
     width: 250px;
@@ -37,11 +37,8 @@
 
 #mainViewCategory {
     position: relative;
-    background-color: rgb(155, 155, 155);
-    top: 70px;
-    width: 100px;
-    height: 70px;
-    
+    float: left;
+    clear: left;
     
 }
 
@@ -49,7 +46,15 @@
     position: relative;
     height: 20px;
     width: 60px;
-    top: 50px;
+    top: 10px;
+    float: left;
+    clear: left;
+}
 
+#oneDiv {
+    position: relative; 
+    height: 300px;
+    width: 150px;
+    border: solid 2px black;
 }
 

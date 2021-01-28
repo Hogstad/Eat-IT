@@ -9,15 +9,17 @@ function mainView() {
                 <button>Ordre</button>
             </div> 
                 `;
+                html += `
+                <div id="oneDiv">
+                `;
             for(let i = 0; i < model.category.length; i++) {
                 html += `
-                    <div id="mainViewCategory">
-                        <button onclick="printCategory(${i})">${model.category[i].type}</button>
-                    </div>
+                    <button onclick="printCategory(${i})" id="mainViewCategory">${model.category[i].type}</button>    
                `;
             };
             html += `
-            <button id="addCategory">Legg til</button>
+                <button id="addCategory">Legg til</button>
+            </div>
             `;
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
