@@ -6,7 +6,6 @@ const model = {
         name: [
             {name: 'Henrik', isSelected: true},
             {name: 'Flemming', isSelected: false},
-            {name: 'Sindre', isSelected: false},
         ],   
     },
 
