@@ -5,7 +5,7 @@ function mainView() {
     html += `
             <div id="mainViewButtons">
                 <button>Servitør</button>
-                <button>Legg til ny bruker</button>
+                <button onclick="addUserView()">Legg til ny bruker</button>
                 <button>Ordre</button>
             </div> 
                 `;
