@@ -23,6 +23,14 @@ function addUserView() {
             `;
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
+            <div id="addUserPoppUp">
+                <button>Servitør</button
+                <br>
+            <form id="addUserPoppUpText">
+                <label for="fname">Navn på servitør: </label>
+                <input type="text" id="fname" name="fname">
+            </form>
+            </div>
             `;
         divApp.innerHTML = html;
 };
