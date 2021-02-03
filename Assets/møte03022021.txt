@@ -1,0 +1,8 @@
+saamle en bestilling på et bod. Så kokken kan sende ut alle bestilingene når de er klare.
+
+bord - alle retter som er bestilt - 
+
+evt summen av alle rettene som er bestilt på hvert enkelt bord.
+sum på alle rettene.
+
+mulighet for å slette/gjøre opp bordet. Så blir det en reset på bordet.
