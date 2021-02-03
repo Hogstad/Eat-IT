@@ -1,6 +1,5 @@
 
-mainView();
-function mainView() {
+function subView() {
     let html =  `
         <button>Servitør</button>
         <button>Legg til ny bruker</button>
