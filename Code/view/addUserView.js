@@ -24,7 +24,7 @@ function addUserView() {
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
             <div id="addUserPoppUp">
-                <button>Servitør</button
+                <button onclick="mainView()">Servitør</button
                 <br>
             <form id="addUserPoppUpText">
                 <label for="fname">Navn på servitør: </label>
