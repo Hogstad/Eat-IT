@@ -24,11 +24,11 @@ function addUserView() {
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
             <div id="addUserPoppUp">
-                <button onclick="mainView()">Servitør</button
+                <h3>Ny servitør</h3>
                 <br>
             <form id="addUserPoppUpText">
                 <label for="fname">Navn på servitør: </label>
-                <input type="text" id="fname" name="fname" oninput="getData(this.value)">
+                <input type="text" id="fname" name="fname" oninput="getDataWaitor(this.value)">
             </form>
                 <br>
                 <br>

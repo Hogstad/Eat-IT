@@ -1,14 +1,27 @@
 // funksjoner for addUserView for å kunne legge til nye servitører.
-function getData(inputText) {
+function getDataWaitor(inputText) {
     addWaitor = inputText;
 }
 
 function saveNewWaitor() {
     let x = {
-        name: addWaitor, isSelected: false,
+        name: addWaitor,
     }
     model.waitor.names.push(x);
     inputText = "";
-    addUserView();
+    mainView();
+}
+
+function getDataCategory(inputText) {
+    addCategory = inputText;
+}
+
+function saveNewCategory() {
+    let x = {
+        type: addCategory,
+        retter: [],
+    }
+    model.category.push(x);
+    mainView();
 }
 

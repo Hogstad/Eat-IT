@@ -23,6 +23,18 @@ function addCategoryView() {
             `;
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
+            <div id="addCategoryPoppUp">
+                <h3>Ny kategori</h3>
+                <br>
+            <form id="addCategoryPoppUpText">
+                <label for="kname">Navn på kategori: </label>
+                <input type="text" id="kategoriName" name="kname" oninput="getDataCategory(this.value)">
+            </form>
+                <br>
+                <br>
+                <br>
+            <button onclick="saveNewCategory()">Legg til</button
+            </div>
             `;
         divApp.innerHTML = html;
 };

@@ -5,6 +5,7 @@ const model = {
     selectedWaitor: "",
     addWaitor: "",
     showDishes: "",
+    addCategory: "",
 
     waitor: {
         names: [

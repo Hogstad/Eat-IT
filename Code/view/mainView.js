@@ -33,7 +33,7 @@ function mainView() {
                `;
             };
             html += `
-                <button id="addCategory">Legg til</button>
+                <button id="addCategory" onclick="addCategoryView()">Legg til</button>
             </div>
             `;
             html += `
@@ -44,6 +44,9 @@ function mainView() {
 
 function printCategory(index) {
     let html = "";
+    html += `
+    <button>Legg til</button>
+    `;
     for (let i = 0; i < model.category[index].retter.length; i++) {
         html += `
             <div class="dishDiv">
@@ -57,7 +60,7 @@ function printCategory(index) {
         html += `
             </h4>
                 <button class="coloredButtons">Rediger</button>
-                <button class="coloredButtons">Legg til ny</button>
+                <button class="coloredButtons">Bestill</button>
             </div>
         `;
     }
