@@ -4,7 +4,22 @@ function mainView() {
     let html = "";
     html += `
             <div id="mainViewButtons">
-                <button>Servitør</button>
+            
+            <select onchange="selectedBox(this.value, true)"> `;
+            for(let i = 0; i <model.waitor.names.length; i++) {
+                if (i == model.selectedWaitor) {
+                    html += `
+                    <option selected value="${i}">${model.waitor.names.name}</option>
+                    `;
+                }
+                else {
+                    html += `
+                    <option value="${i}">${model.waitor.names.name}</option>
+                    `;
+                }
+            }
+            html += `
+            </select>
                 <button onclick="addUserView()">Legg til ny bruker</button>
                 <button>Ordre</button>
             </div> 

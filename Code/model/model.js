@@ -2,6 +2,10 @@
 const divApp = document.getElementById("app");
 
 const model = {
+    selectedWaitor: "",
+    addWaitor: "",
+    showDishes: "",
+
     waitor: {
         names: [
             {name: 'Henrik', isSelected: true},
@@ -9,11 +13,6 @@ const model = {
         ],   
     },
 
-    addWaitor: "",
-
-    showDishes: "",
-
-    
     category: [
         {
             type: 'Varmretter',
