@@ -9,12 +9,12 @@ function mainView() {
             for(let i = 0; i <model.waitor.names.length; i++) {
                 if (i == model.selectedWaitor) {
                     html += `
-                    <option selected value="${i}">${model.waitor.names.name}</option>
+                    <option selected value="${i}">${model.waitor.names[i].name}</option>
                     `;
                 }
                 else {
                     html += `
-                    <option value="${i}">${model.waitor.names.name}</option>
+                    <option value="${i}">${model.waitor.names[i].name}</option>
                     `;
                 }
             }
