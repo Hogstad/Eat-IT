@@ -3,13 +3,15 @@ const divApp = document.getElementById("app");
 
 const model = {
     waitor: {
-        name: [
+        names: [
             {name: 'Henrik', isSelected: true},
             {name: 'Flemming', isSelected: false},
         ],   
     },
 
-    showDishes: "", 
+    addWaitor: "",
+
+    showDishes: "",
 
     
     category: [

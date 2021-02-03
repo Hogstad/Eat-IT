@@ -1,2 +1,14 @@
-// denne funksjonen skal gjøre det mulig å printe ut navn og
-// ingredients når man trykker på en av kategori knappene.
+// funksjoner for addUserView for å kunne legge til nye servitører.
+function getData(inputText) {
+    addWaitor = inputText;
+}
+
+function saveNewWaitor() {
+    let x = {
+        name: addWaitor, isSelected: false,
+    }
+    model.waitor.names.push(x);
+    inputText = "";
+    addUserView();
+}
+

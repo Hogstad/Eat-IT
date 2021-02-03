@@ -28,8 +28,12 @@ function addUserView() {
                 <br>
             <form id="addUserPoppUpText">
                 <label for="fname">Navn på servitør: </label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="fname" name="fname" oninput="getData(this.value)">
             </form>
+                <br>
+                <br>
+                <br>
+            <button onclick="saveNewWaitor()">Legg til</button
             </div>
             `;
         divApp.innerHTML = html;
