@@ -5,7 +5,7 @@ function mainView() {
     html += `
             <div id="mainViewButtons">
             
-            <select onchange="selectedBox(this.value, true)"> `;
+            <select onchange="selectedWaitor(this.value, true)"> `;
             for(let i = 0; i <model.waitor.names.length; i++) {
                 if (i == model.selectedWaitor) {
                     html += `
