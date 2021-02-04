@@ -25,3 +25,33 @@ function saveNewCategory() {
     mainView();
 }
 
+// vellykket
+
+function saveNewRetter() {
+    let x = {
+        navn: model.addRetter,
+        ingredients: model.addIngredients,
+            
+        
+    }
+    model.category[model.selectedCategory].retter.push(x);
+    mainView();
+}
+
+function getDataCategoryTwo(inputTextCategory) {
+    model.addRetter = inputTextCategory;
+}
+
+function getDataCategoryThree(inputTextCategory) {
+    let temporaryAddIngredients = inputTextCategory.split(", ");
+    let liste = [];
+    for (let i = 0; i < temporaryAddIngredients.length; i++) {
+        let x = {name: temporaryAddIngredients[i], isSelected: true,};
+        liste.push(x);
+    }
+    model.addIngredients = liste;
+}
+
+function selectedCategory(num) {
+    model.selectedCategory = num;
+}

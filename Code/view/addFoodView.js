@@ -34,7 +34,7 @@ function addFoodView() {
                 <label for="foodTwoname">Navn på ingr: </label>
                 <input type="text" id="kategoriNameTwo" name="foodTwoname" oninput="getDataCategoryThree(this.value)">
             </form>
-            <button onclick="mainView(), getDataCategoryTwo(), getDataCategoryThree()">Legg til</button
+            <button onclick="saveNewRetter()">Legg til</button
             </div>
             `;
         divApp.innerHTML = html;

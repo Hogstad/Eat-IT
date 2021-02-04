@@ -68,5 +68,6 @@ function printCategory(index) {                // prøving
         
     `;
     model.showDishes = html;
+    selectedCategory(index);
     mainView();
 };
