@@ -39,7 +39,7 @@ function selectedCategory(num) {
 }
 
 function getDataCategory(inputText) {
-    addretter = inputText;
+    addRetter = inputText;
 }
 function getDataCategory(inputText) {
     addIngredients = inputText;
