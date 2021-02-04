@@ -44,3 +44,13 @@ function getDataCategory(inputText) {
 function getDataCategory(inputText) {
     addIngredients = inputText;
 }
+
+let addIngredients = input.split(', ')
+let ingrObj = [];
+for (let i = 0; i < addIngredients.length; i++) {
+    ingrObj.push()
+}
+for (let i = 0; i < addIngredients.lenght; i++) {
+    let x = {name: addIngredients[i], isSelected: true};
+    ingrObj.push(x)
+}
