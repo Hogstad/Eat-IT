@@ -25,3 +25,19 @@
 
 // function checkbox
 // -checkbox til ordre siden. 
+
+function addNewContentInBox() {
+    if (model.newContentInput === "") {
+        return;
+    }
+    let x = {
+        name: addCategory,
+        ingredients: [],
+    }
+    model.category[model.selectedCategory].retter.push(x)
+subView();
+}
+
+function selectedCategory(num) {
+    model.selectedCategory = num;
+}
