@@ -23,6 +23,18 @@ function addFoodView() {
             `;
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
+            <div id="addCategoryFood">
+                <h3>Legg til matrett</h3>
+                <br>
+            <form id="addCategoryFoodPoppUpText">
+                <label for="foodname">Navn på rett: </label>
+                <input type="text" id="kategoriName" name="foodname" oninput="getDataCategory(this.value)">
+            </form>
+                <br>
+                <br>
+                <br>
+            <button onclick="">Legg til</button
+            </div>
             `;
         divApp.innerHTML = html;
 };

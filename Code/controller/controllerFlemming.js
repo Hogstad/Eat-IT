@@ -27,9 +27,6 @@
 // -checkbox til ordre siden. 
 
 function addNewContentInBox() {
-    if (model.newContentInput === "") {
-        return;
-    }
     let x = {
         name: addCategory,
         ingredients: [],

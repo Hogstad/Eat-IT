@@ -45,19 +45,7 @@ function mainView() {
 function printCategory(index) {                // prøving
     let html = "";
     html += `
-    <button>Legg til</button> 
-    <div id="addCategoryFood">
-                <h3>Legg til matrett</h3>
-                <br>
-            <form id="addCategoryPoppUpText">
-                <label for="kname">Navn på kategori: </label>
-                <input type="text" id="kategoriName" name="kname" oninput="getDataCategory(this.value)">
-            </form>
-                <br>
-                <br>
-                <br>
-            <button onclick="saveNewCategory()">Legg til</button
-            </div>
+    <button onclick="addFoodView()">Legg til</button>
     `;
     for (let i = 0; i < model.category[index].retter.length; i++) {
         html += `
