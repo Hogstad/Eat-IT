@@ -8,6 +8,7 @@ const model = {
     addCategory: "",
     selectedCategory: "",
     addRetter: "",
+    addIngredients: "",
 
     waitor: {
         names: [
