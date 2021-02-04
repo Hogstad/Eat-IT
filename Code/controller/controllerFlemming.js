@@ -29,7 +29,7 @@
 function saveNewRetter() {
     let x = {
         name: addRetter,
-        ingredients: [],
+        ingredients: [addIngredients],
     }
     model.category[model.selectedCategory].retter.push(x)
 }
