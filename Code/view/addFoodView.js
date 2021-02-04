@@ -24,16 +24,17 @@ function addFoodView() {
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
             <div id="addCategoryFood">
-                <h3>Legg til matrett</h3>
+                <h2>Legg til matrett og ingredienser</h2>
                 <br>
             <form id="addCategoryFoodPoppUpText">
                 <label for="foodname">Navn på rett: </label>
                 <input type="text" id="kategoriName" name="foodname" oninput="getDataCategory(this.value)">
             </form>
-                <br>
-                <br>
-                <br>
-            <button onclick="">Legg til</button
+            <form id="addCategoryFoodTwoPoppUpText">
+                <label for="foodTwoname">Navn på ingr: </label>
+                <input type="text" id="kategoriNameTwo" name="foodTwoname" oninput="getDataCategory(this.value)">
+            </form>
+            <button onclick="mainView()">Legg til</button
             </div>
             `;
         divApp.innerHTML = html;

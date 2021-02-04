@@ -45,7 +45,7 @@ function mainView() {
 function printCategory(index) {                // prøving
     let html = "";
     html += `
-    <button onclick="addFoodView()">Legg til</button>
+    <button onclick="addFoodView()" id="addFoodViewButton">Legg til</button>
     `;
     for (let i = 0; i < model.category[index].retter.length; i++) {
         html += `
