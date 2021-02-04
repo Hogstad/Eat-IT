@@ -32,15 +32,16 @@ function saveNewRetter() {
         ingredients: ["Name:", addIngredients,],
     }
     model.category[model.selectedCategory].retter.push(x)
+    mainView();
 }
 
 function selectedCategory(num) {
     model.selectedCategory = num;
 }
 
-function getDataCategory(inputText) {
-    addRetter = inputText;
+function getDataCategoryTwo(inputTextCategory) {
+    addRetter = inputTextCategory;
 }
-function getDataCategory(inputText) {
-    addIngredients = inputText;
+function getDataCategoryThree(inputTextCategory) {
+    addIngredients = inputTextCategory;
 }

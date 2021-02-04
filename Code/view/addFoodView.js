@@ -28,13 +28,13 @@ function addFoodView() {
                 <br>
             <form id="addCategoryFoodPoppUpText">
                 <label for="foodname">Navn på rett: </label>
-                <input type="text" id="kategoriName" name="foodname" oninput="getDataCategory(this.value)">
+                <input type="text" id="kategoriName" name="foodname" oninput="getDataCategoryTwo(this.value)">
             </form>
             <form id="addCategoryFoodTwoPoppUpText">
                 <label for="foodTwoname">Navn på ingr: </label>
-                <input type="text" id="kategoriNameTwo" name="foodTwoname" oninput="getDataCategory(this.value)">
+                <input type="text" id="kategoriNameTwo" name="foodTwoname" oninput="getDataCategoryThree(this.value)">
             </form>
-            <button onclick="mainView()">Legg til</button
+            <button onclick="mainView(), getDataCategoryTwo(), getDataCategoryThree()">Legg til</button
             </div>
             `;
         divApp.innerHTML = html;
