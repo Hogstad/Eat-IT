@@ -137,10 +137,42 @@
 
 #addCategoryFoodPoppUpText {
     position: relative;
-    top: 50px;
+    top: 10px;
 }
 
 #addCategoryFood button {
     position: relative;
     left: 88px;
+}
+
+/* addFoodViewTwo */
+#addCategoryFood {
+    position: relative;
+    background-color: #D4D4D4;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 16px;
+    top: -300px;
+    left: 200px;
+    padding: 5px;
+    
+}
+
+#addCategoryFoodTwoPoppUpText {
+    position: relative;
+    top: 30px;
+}
+ 
+#addCategoryFood button {
+    position: relative;
+    left: 92px;
+    top: 40px;
+}
+
+/* Legg til knapp addFoodCategory */
+#addFoodViewButton {
+    position: relative;
+    left: 1px;
+    top: -5px;
 }
