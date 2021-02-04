@@ -26,13 +26,12 @@
 // function checkbox
 // -checkbox til ordre siden. 
 
-function addNewContentInBox() {
+function saveNewRetter() {
     let x = {
-        name: addCategory,
+        name: addRetter,
         ingredients: [],
     }
     model.category[model.selectedCategory].retter.push(x)
-subView();
 }
 
 function selectedCategory(num) {
