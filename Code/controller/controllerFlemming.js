@@ -37,3 +37,10 @@ function saveNewRetter() {
 function selectedCategory(num) {
     model.selectedCategory = num;
 }
+
+function getDataCategory(inputText) {
+    addretter = inputText;
+}
+function getDataCategory(inputText) {
+    addIngredients = inputText;
+}
