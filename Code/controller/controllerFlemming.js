@@ -29,7 +29,7 @@
 function saveNewRetter() {
     let x = {
         name: addRetter,
-        ingredients: ["Name:", addIngredients,],
+        ingredients: ingrObj,
     }
     model.category[model.selectedCategory].retter.push(x)
     mainView();
@@ -44,4 +44,14 @@ function getDataCategoryTwo(inputTextCategory) {
 }
 function getDataCategoryThree(inputTextCategory) {
     addIngredients = inputTextCategory;
+}
+
+let addIngredients = input.split(', ')
+let ingrObj = [];
+for (let i = 0; i < addIngredients.length; i++) {
+    ingrObj.push()
+}
+for (let i = 0; i < addIngredients.lenght; i++) {
+    let x = {name: addIngredients[i], isSelected: true};
+    ingrObj.push(x)
 }
