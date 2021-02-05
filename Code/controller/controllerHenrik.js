@@ -1,8 +1,4 @@
-// funksjoner for addUserView for å kunne legge til nye servitører.
-function getDataWaitor(inputText) {
-    addWaitor = inputText;
-}
-
+//Function for å lagre ny servitør i modellen.
 function saveNewWaitor() {
     let x = {
         name: addWaitor,
@@ -12,10 +8,7 @@ function saveNewWaitor() {
     mainView();
 }
 
-function getDataCategory(inputText) {
-    addCategory = inputText;
-}
-
+//Function for å lagre ny Category i modellen.
 function saveNewCategory() {
     let x = {
         type: addCategory,
@@ -25,18 +18,20 @@ function saveNewCategory() {
     mainView();
 }
 
-// funksjoner for å legge til noe i nye kategorier.
-
+//Function for å lagre ny retter innen for category i mordellen.
 function saveNewRetter() {
     let x = {
         navn: model.addRetter,
         pris: model.addPris,
         ingredients: model.addIngredients,
-            
-        
     }
     model.category[model.selectedCategory].retter.push(x);
     mainView();
+}
+
+//Inputtext functions.
+function getDataCategory(inputText) {
+    addCategory = inputText;
 }
 
 function getDataCategoryTwo(inputTextCategory) {
@@ -57,10 +52,15 @@ function getDataCategoryThree(inputTextCategory) {
     model.addIngredients = liste;
 }
 
+//Hjelpefunction for å velge servitør/category.
 function selectedCategory(num) {
     model.selectedCategory = num;
 }
 
 function selectedWaitor(num) {
     model.selectedWaitor = num;
+}
+
+function getDataWaitor(inputText) {
+    addWaitor = inputText;
 }
