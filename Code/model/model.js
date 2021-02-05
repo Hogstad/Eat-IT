@@ -12,8 +12,8 @@ const model = {
 
     waitor: {
         names: [
-            {name: 'Henrik', isSelected: true},
-            {name: 'Flemming', isSelected: false},
+            {name: 'Henrik'},
+            {name: 'Flemming'},
         ],   
     },
 
@@ -23,65 +23,69 @@ const model = {
             retter: [
                 {
                     navn: 'Taco',
+                    pris: 'number',
                     ingredients: [
-                        {name: 'Kjøttdeig', isSelected: true },
-                        {name: 'tacokrydder', isSelected: true },
-                        {name: 'tortilla', isSelected: true },
-                        {name: 'isbergsalat', isSelected: true },
-                        {name: 'slangeagurk', isSelected: true },
-                        {name: 'tomater', isSelected: true },
-                        {name: 'tomater', isSelected: true },
-                        {name: 'mais', isSelected: true },
-                        {name: 'gulost', isSelected: true },
-                        {name: 'rømme', isSelected: true },
+                        {name: 'Kjøttdeig'},
+                        {name: 'tacokrydder'},
+                        {name: 'tortilla'},
+                        {name: 'isbergsalat'},
+                        {name: 'slangeagurk'},
+                        {name: 'tomater'},
+                        {name: 'tomater'},
+                        {name: 'mais'},
+                        {name: 'gulost'},
+                        {name: 'rømme'},
                     ],
                 },
                 {
                     navn: 'Fersk vårruller med kylling',
+                    pris: 'number',
                     ingredients: [
-                        {name: 'kyllingfilet', isSelected: true },
-                        {name: 'gulrot', isSelected: true },
-                        {name: 'rød spisskål', isSelected: true },
-                        {name: 'vårløk', isSelected: true },
-                        {name: 'agurk', isSelected: true },
-                        {name: 'hjertesalat', isSelected: true },
-                        {name: 'koriander', isSelected: true },
-                        {name: 'salt', isSelected: true },
-                        {name: 'peppermiks', isSelected: true },
+                        {name: 'kyllingfilet'},
+                        {name: 'gulrot'},
+                        {name: 'rød spisskål'},
+                        {name: 'vårløk'},
+                        {name: 'agurk'},
+                        {name: 'hjertesalat'},
+                        {name: 'koriander'},
+                        {name: 'salt'},
+                        {name: 'peppermiks'},
                     ],
                 },  
             ],
         },
         {
             type: 'Salat',
+            pris: 'number',
             retter: [
                 {
                     navn: 'Taco Salat',
                     ingredients: [
-                        {name: 'karbonadedeig', isSelected: true },
-                        {name: 'hvitløk', isSelected: true },
-                        {name: 'olje', isSelected: true },
-                        {name: 'tacokrydder', isSelected: true },
-                        {name: 'vann', isSelected: true },
-                        {name: 'røde bønner', isSelected: true },
-                        {name: 'rødløk', isSelected: true },
-                        {name: 'sitron', isSelected: true },
-                        {name: 'hjertesalat', isSelected: true },
-                        {name: 'tortillachips', isSelected: true },
-                        {name: 'vårløk', isSelected: true },
-                        {name: 'jalapeñog', isSelected: true },
-                        {name: 'frisk koriander', isSelected: true },
+                        {name: 'karbonadedeig'},
+                        {name: 'hvitløk'},
+                        {name: 'olje'},
+                        {name: 'tacokrydder'},
+                        {name: 'vann'},
+                        {name: 'røde bønner'},
+                        {name: 'rødløk'},
+                        {name: 'sitron'},
+                        {name: 'hjertesalat'},
+                        {name: 'tortillachips'},
+                        {name: 'vårløk'},
+                        {name: 'jalapeñog'},
+                        {name: 'frisk koriander'},
                     ],
                 },
             ],
         },
         {
             type: 'Dessert',
+            pris: 'number',
             retter: [
                 {
                     navn: 'Kake',
                     ingredients: [
-                        {name: 'kakemix', isSelected: true },
+                        {name: 'kakemix'},
                         
                     ],
                 },
@@ -89,11 +93,12 @@ const model = {
         },
         {
             type: 'Drinks',
+            pris: 'number',
             retter: [
                 {
                     navn: 'Melk',
                     ingredients: [
-                        {name: 'Ku Melk', isSelected: true },
+                        {name: 'Ku Melk'},
                         
                     ],
                 },
