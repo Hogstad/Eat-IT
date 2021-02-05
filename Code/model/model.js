@@ -56,10 +56,10 @@ const model = {
         },
         {
             type: 'Salat',
-            pris: 'number',
             retter: [
                 {
                     navn: 'Taco Salat',
+                    pris: 'number',
                     ingredients: [
                         {name: 'karbonadedeig'},
                         {name: 'hvitløk'},
@@ -80,10 +80,10 @@ const model = {
         },
         {
             type: 'Dessert',
-            pris: 'number',
             retter: [
                 {
                     navn: 'Kake',
+                    pris: 'number',
                     ingredients: [
                         {name: 'kakemix'},
                         
@@ -93,10 +93,10 @@ const model = {
         },
         {
             type: 'Drinks',
-            pris: 'number',
             retter: [
                 {
                     navn: 'Melk',
+                    pris: 'number',
                     ingredients: [
                         {name: 'Ku Melk'},
                         
