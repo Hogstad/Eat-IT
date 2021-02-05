@@ -52,7 +52,7 @@ function getDataCategoryPrice(inputTextCategory) {
     model.addPris = inputTextCategory;
 }
 
-//Hjelpefunction for å velge servitør/category.
+//Hjelpefunction for å velge servitør/category/table.
 function selectedCategory(num) {
     model.selectedCategory = num;
 }
