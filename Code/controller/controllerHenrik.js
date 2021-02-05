@@ -46,7 +46,7 @@ function getDataCategoryThree(inputTextCategory) {
     let temporaryAddIngredients = inputTextCategory.split(", ");
     let liste = [];
     for (let i = 0; i < temporaryAddIngredients.length; i++) {
-        let x = {name: temporaryAddIngredients[i], isSelected: true,};
+        let x = {name: temporaryAddIngredients[i]};
         liste.push(x);
     }
     model.addIngredients = liste;

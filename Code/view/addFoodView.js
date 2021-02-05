@@ -34,6 +34,10 @@ function addFoodView() {
                 <label for="foodTwoname">Navn på ingr: </label>
                 <input type="text" id="kategoriNameTwo" name="foodTwoname" oninput="getDataCategoryThree(this.value)">
             </form>
+            <form id="addCategoryFoodThreePrice">
+                <label for="foodPrice">Pris på rett: </label>
+                <input type="text" id="kategoriNameTwo" name="foodPrice" oninput="getDataCategoryThree(this.value)">
+            </form>
             <button onclick="saveNewRetter()">Legg til</button
             </div>
             `;

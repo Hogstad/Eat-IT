@@ -167,7 +167,7 @@
 #addCategoryFood button {
     position: relative;
     left: 92px;
-    top: 40px;
+    top: 60px;
 }
 
 /* Legg til knapp addFoodCategory */
@@ -175,4 +175,9 @@
     position: relative;
     left: 1px;
     top: -5px;
+}
+
+#addCategoryFoodThreePrice {
+    position: relative;
+    top: 50px;
 }
