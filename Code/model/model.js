@@ -9,6 +9,7 @@ const model = {
     selectedCategory: "",
     addRetter: "",
     addIngredients: "",
+    addPris: "",
 
     waitor: {
         names: [
