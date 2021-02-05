@@ -25,33 +25,3 @@
 
 // function checkbox
 // -checkbox til ordre siden. 
-
-function saveNewRetter() {
-    let x = {
-        name: addRetter,
-        ingredients: ingrObj,
-    }
-    model.category[model.selectedCategory].retter.push(x)
-    mainView();
-}
-
-function selectedCategory(num) {
-    model.selectedCategory = num;
-}
-
-function getDataCategoryTwo(inputTextCategory) {
-    addRetter = inputTextCategory;
-}
-function getDataCategoryThree(inputTextCategory) {
-    addIngredients = inputTextCategory;
-}
-
-let addIngredients = input.split(', ')
-let ingrObj = [];
-for (let i = 0; i < addIngredients.length; i++) {
-    ingrObj.push()
-}
-for (let i = 0; i < addIngredients.lenght; i++) {
-    let x = {name: addIngredients[i], isSelected: true};
-    ingrObj.push(x)
-}
