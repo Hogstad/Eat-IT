@@ -38,10 +38,6 @@ function getDataCategoryTwo(inputTextCategory) {
     model.addRetter = inputTextCategory;
 }
 
-function getDataCategoryPrice(inputTextCategory) {
-    model.addPris = inputTextCategory;
-}
-
 function getDataCategoryThree(inputTextCategory) {
     let temporaryAddIngredients = inputTextCategory.split(", ");
     let liste = [];
@@ -50,6 +46,10 @@ function getDataCategoryThree(inputTextCategory) {
         liste.push(x);
     }
     model.addIngredients = liste;
+}
+
+function getDataCategoryPrice(inputTextCategory) {
+    model.addPris = inputTextCategory;
 }
 
 //Hjelpefunction for å velge servitør/category.
