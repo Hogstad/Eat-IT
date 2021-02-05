@@ -50,7 +50,7 @@ function printCategory(index) {
     for (let i = 0; i < model.category[index].retter.length; i++) {
         html += `
             <div class="dishDiv">
-                <h2>${model.category[index].retter[i].navn}</h2><h4>
+                <h2>${model.category[index].retter[i].navn} ${model.category[index].retter[i].pris}</h2><h4>
         `;
         for (let j = 0; j < model.category[index].retter[i].ingredients.length; j++) {
             html += `
