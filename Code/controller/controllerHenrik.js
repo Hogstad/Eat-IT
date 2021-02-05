@@ -55,3 +55,7 @@ function getDataCategoryThree(inputTextCategory) {
 function selectedCategory(num) {
     model.selectedCategory = num;
 }
+
+function selectedWaitor(num) {
+    model.selectedWaitor = num;
+}

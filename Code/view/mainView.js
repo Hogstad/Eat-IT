@@ -69,5 +69,6 @@ function printCategory(index) {
     `;
     model.showDishes = html;
     selectedCategory(index);
+    selectedWaitor(index);
     mainView();
 };
