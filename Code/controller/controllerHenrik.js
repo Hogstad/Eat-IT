@@ -25,7 +25,7 @@ function saveNewCategory() {
     mainView();
 }
 
-// vellykket
+// funksjoner for å legge til noe i nye kategorier.
 
 function saveNewRetter() {
     let x = {

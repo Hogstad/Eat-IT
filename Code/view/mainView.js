@@ -42,7 +42,7 @@ function mainView() {
         divApp.innerHTML = html;
 };
 
-function printCategory(index) {                // prøving
+function printCategory(index) {             
     let html = "";
     html += `
     <button onclick="addFoodView()" id="addFoodViewButton">Legg til</button>
