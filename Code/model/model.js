@@ -10,12 +10,29 @@ const model = {
     addRetter: "",
     addIngredients: "",
     addPris: "",
+    selectedTable: "",
 
     waitor: {
         names: [
             {name: 'Henrik'},
             {name: 'Flemming'},
         ],   
+    },
+
+    table: {
+        tables: [
+            {name: 'Bord 1'},
+            {name: 'Bord 2'},
+            {name: 'Bord 3'},
+            {name: 'Bord 4'},
+            {name: 'Bord 5'},
+            {name: 'Bord 6'},
+            {name: 'Bord 7'},
+            {name: 'Bord 8'},
+            {name: 'Bord 9'},
+            {name: 'Bord 10'},
+
+        ],
     },
 
     category: [
