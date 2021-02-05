@@ -61,6 +61,10 @@ function selectedWaitor(num) {
     model.selectedWaitor = num;
 }
 
+function selectedTable(num) {
+    model.selectedTable = num;
+}
+
 function getDataWaitor(inputText) {
     addWaitor = inputText;
 }
