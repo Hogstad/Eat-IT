@@ -30,6 +30,7 @@ function saveNewCategory() {
 function saveNewRetter() {
     let x = {
         navn: model.addRetter,
+        pris: model.addPris,
         ingredients: model.addIngredients,
             
         
@@ -40,6 +41,10 @@ function saveNewRetter() {
 
 function getDataCategoryTwo(inputTextCategory) {
     model.addRetter = inputTextCategory;
+}
+
+function getDataCategoryPrice(inputTextCategory) {
+    model.addPris = inputTextCategory;
 }
 
 function getDataCategoryThree(inputTextCategory) {
