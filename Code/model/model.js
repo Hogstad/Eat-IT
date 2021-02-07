@@ -19,21 +19,38 @@ const model = {
         ],   
     },
 
-    table: {
-        tables: [
-            {name: 'Bord 1'},
-            {name: 'Bord 2'},
-            {name: 'Bord 3'},
-            {name: 'Bord 4'},
-            {name: 'Bord 5'},
-            {name: 'Bord 6'},
-            {name: 'Bord 7'},
-            {name: 'Bord 8'},
-            {name: 'Bord 9'},
-            {name: 'Bord 10'},
-
-        ],
-    },
+    tables: [
+        {
+            name: 'Bord 1',
+            content: [
+            {Bestilling: 'content'},//Alle bestillinger på et bord.
+            {kommentar: 'content'},//Komentar på hver enkelt bestilling
+            {pris: 'number'},//Total pris for alle bestillingene
+            {waitor: 'Henrik'},//Hvilken servitør som har sendt bestilling.
+            {Checkbox: IsChecked},//Checkbox på når maten er ferdig fra kjøkken.
+            ],
+        },
+        {
+            name: 'Bord 2',
+            content: [
+                {Bestilling: 'content'},
+                {kommentar: 'content'},
+                {pris: 'number'},
+                {waitor: 'Henrik'},
+                {Checkbox: IsChecked},
+                ],
+        },
+        {
+            name: 'Bord 3',
+            content: [
+                {Bestilling: 'content'},
+                {kommentar: 'content'},
+                {pris: 'number'},
+                {waitor: 'Henrik'},
+                {Checkbox: IsChecked},
+                ],
+        },
+    ],
 
     category: [
         {
