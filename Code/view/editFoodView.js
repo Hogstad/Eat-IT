@@ -1,6 +1,7 @@
 // skjermbilde 7, 8!!!!!!!!!!!!!!!!!!!
 
-function editFoodView() {
+function editFoodView(index) {
+    selectedFood(index);
     let html = "";
     html += `
             <div id="mainViewButtons">
@@ -45,22 +46,22 @@ function editFoodView() {
                         <th>Ingredienser</th>
                         <th>Fjern</th>
                     </tr>
-                    <tr>
-                    <td>Kjøttdeig</td>
-                    <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                    <td>Tacolefse</td>
-                    <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                    <td>Tacokrydder</td>
-                    <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                    <td>NASA material</td>
-                    <td><input type="checkbox"></td>
-                    </tr>
+                    `;
+
+                    // Bytte til model.category.length
+                    // td må være string interpolationed
+                    console.log(model.selectedFood);
+                    let ingr = model.category[model.selectedCategory].retter[model.selectedFood].ingredients;
+                    for (let liste = 0; liste < ingr.length; liste++) {
+                        html += `
+                            <tr>
+                                <td>${ingr[liste].name}</td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                        `;
+                    }
+
+                    html += `
                 </table>
             
             </div>
@@ -75,3 +76,20 @@ function editFoodView() {
 // Table med type på toppen "navn"
 // Så pushe inn alle ingr.
 // Så legge til en checkbox på siden.
+
+/*      <tr>
+<td>Kjøttdeig</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td>Tacolefse</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td>Tacokrydder</td>
+<td><input type="checkbox"></td>
+</tr>
+<tr>
+<td>NASA material</td>
+<td><input type="checkbox"></td>
+</tr> */

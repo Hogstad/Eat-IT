@@ -60,7 +60,7 @@ function printCategory(index) {
         html += `
             </h4>
                 <button class="coloredButtons">Rediger</button>
-                <button class="coloredButtons" onclick="editFoodView()">Bestill</button>
+                <button class="coloredButtons" onclick="editFoodView(${i})">Bestill</button>
             </div>
         `;
     }
