@@ -19,12 +19,14 @@ const model = {
         ],   
     },
 
-    tables: [
-        {name: 'Bord 1'},
-        {name: 'Bord 2'},
-        {name: 'Bord 3'},
-        {name: 'Bord 4'},
-    ],
+    tables: {
+        names: [
+            {name: 'Bord 1'},
+            {name: 'Bord 2'},
+            {name: 'Bord 3'},
+            {name: 'Bord 4'},
+        ],   
+    },
 
     category: [
         {
