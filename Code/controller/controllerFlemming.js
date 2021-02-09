@@ -25,3 +25,20 @@
 
 // function checkbox
 // -checkbox til ordre siden. 
+html += `
+<select onchange="selectedTable(this.value, true)"> `;
+            for(let i = 0; i <model.tables.names.length; i++) {
+                if (i == model.selectedTable) {
+                    html += `
+                    <option selected value="${i}">${model.tables.names[i].name}</option>
+                    `;
+                }
+                else {
+                    html += `
+                    <option value="${i}">${model.tables.names[i].name}</option>
+                    `;
+                }
+            }
+            html += `
+            </select>
+            `;
