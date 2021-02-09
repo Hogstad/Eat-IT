@@ -120,13 +120,13 @@ const model = {
                 //Bord 0
                 [
                     {
-                        måtlid: 'taco',
+                        måltid: 'taco',
                         pris: '100,-',
                         notWantet: [/*ikke ønsket ingr*/],
                         kommentar: '',
                     },
                     {
-                        måtlid: 'Melk',
+                        måltid: 'Melk',
                         pris: '100,-',
                         notWantet: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -135,7 +135,7 @@ const model = {
                 //Bord 1
                 [
                     {
-                        måtlid: 'taco',
+                        måltid: 'taco',
                         pris: '100,-',
                         notWantet: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -144,7 +144,7 @@ const model = {
                 //Bord 2
                 [
                     {
-                        måtlid: 'taco',
+                        måltid: 'taco',
                         pris: '100,-',
                         notWantet: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -156,7 +156,7 @@ const model = {
                 //Bord 0
                 [
                     {
-                        måtlid: 'taco',
+                        måltid: 'taco',
                         pris: '100,-',
                         notWantet: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -165,7 +165,7 @@ const model = {
                 //Bord 1
                 [
                     {
-                        måtlid: 'taco',
+                        måltid: 'taco',
                         pris: '100,-',
                         notWantet: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -174,7 +174,7 @@ const model = {
                 //Bord 2
                 [
                     {
-                        måtlid: 'taco',
+                        måltid: 'taco',
                         pris: '100,-',
                         notWantet: [/*ikke ønsket ingr*/],
                         kommentar: '',
