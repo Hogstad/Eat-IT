@@ -45,27 +45,34 @@ function editFoodView() {
                         <th>Ingredienser</th>
                         <th>Fjern</th>
                     </tr>
+                    `;
+                    let retter = model.category[model.selectedCategory].retter[selectedFood];
+                    for(let j = 0; j < retter.length; j++) {
+                        html +=`
                     <tr>
-                    <td>Kjøttdeig</td>
-                    <td><input type="checkbox"></td>
+                        <td>${j + 1}:</td>
+                        <td>${retter[j].ingredients}</td>
+                            `;
+                            if (j === model.checkedBox) {
+                                html += `
+                                <td><input checked type="checkbox" onchange="boxIsChecked(${j})"></td>`;
+                            }
+                            else {
+                                html += `
+                                <td> <input type="checkbox" onchange="boxIsChecked(${j})"> </td>
+                                `;
+                            }
+                            html += `
                     </tr>
-                    <tr>
-                    <td>Tacolefse</td>
-                    <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                    <td>Tacokrydder</td>
-                    <td><input type="checkbox"></td>
-                    </tr>
-                    <tr>
-                    <td>NASA material</td>
-                    <td><input type="checkbox"></td>
-                    </tr>
+                    `; 
+                    html +=`
+            }
+            `;
+            html +=`
                 </table>
             
             </div>
             `;
-            
         divApp.innerHTML = html;
         selectedTable();
 };
