@@ -124,6 +124,12 @@ const model = {
                         pris: '100,-',
                         notWantet: [/*ikke ønsket ingr*/],
                         kommentar: '',
+                    },
+                    {
+                        måtlid: 'Melk',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
                     }
                 ],
                 //Bord 1
