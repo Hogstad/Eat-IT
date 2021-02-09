@@ -5,12 +5,14 @@ const model = {
     selectedWaitor: "",
     selectedTable: "",
     selectedCategory: "",
+    selectedFood: "",
     addWaitor: "",
     addCategory: "",
     addRetter: "",
     addIngredients: "",
     addPris: "",
     showDishes: "",
+    checkedBox: "",
     
     waitor: {
         names: [

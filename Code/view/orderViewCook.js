@@ -24,32 +24,7 @@ function orderViewCook() {
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
             `;
-            html += `
-            <table style="width:60%">
-            `;
-            let content = model.boxes[model.selectedBox].content;
-            for(let j = 0; j < content.length; j++) {
-                html += `
-                <tr>
-                    <td>${j + 1}:</td>
-                    <td>${content[j].contentOfBox}</td>
-                    `;
-                    if (j === model.checkedBox) {
-                       html += `
-                       <td><input checked type="checkbox" onchange="boxIsChecked(${j})"></td>`;
-                    }
-                    else {
-                        html += `
-                        <td> <input type="checkbox" onchange="boxIsChecked(${j})"> </td>
-                        `;
-                    }
-                    html += `
-                </tr>
-                `; 
-            } 
-            html += `
-            </table>
-            `;
+         
         divApp.innerHTML = html;
 };
 

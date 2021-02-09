@@ -42,3 +42,41 @@ html += `
             html += `
             </select>
             `;
+
+
+html += `
+<table style="width:60%">
+`;
+let retter = model.category[model.selectedCategory].retter[selectedFood];
+for(let j = 0; j < retter.length; j++) {
+    html += `
+    <tr>
+        <td>${j + 1}:</td>
+        <td>${retter[j].ingredients}</td>
+        `;
+        if (j === model.checkedBox) {
+            html += `
+            <td><input checked type="checkbox" onchange="boxIsChecked(${j})"></td>`;
+        }
+        else {
+            html += `
+            <td> <input type="checkbox" onchange="boxIsChecked(${j})"> </td>
+            `;
+        }
+        html += `
+    </tr>
+    `; 
+} 
+html += `
+</table>
+`;
+
+function boxIsChecked(index) {
+    if (index === model.checkedBox) {
+        model.checkedBox = ''; 
+    }
+    else {
+        model.checkedBox = index;
+    }
+subView();
+}
