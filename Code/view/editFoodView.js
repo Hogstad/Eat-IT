@@ -24,6 +24,7 @@ function editFoodView() {
             html += `
             <div id="mainViewShowDishes">${model.showDishes}</div>
             `;
+            
         divApp.innerHTML = html;
 };
 

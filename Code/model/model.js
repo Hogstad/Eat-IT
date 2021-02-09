@@ -3,15 +3,15 @@ const divApp = document.getElementById("app");
 
 const model = {
     selectedWaitor: "",
-    addWaitor: "",
-    showDishes: "",
-    addCategory: "",
+    selectedTable: "",
     selectedCategory: "",
+    addWaitor: "",
+    addCategory: "",
     addRetter: "",
     addIngredients: "",
     addPris: "",
-    selectedTable: "",
-
+    showDishes: "",
+    
     waitor: {
         names: [
             {name: 'Henrik'},
@@ -20,36 +20,10 @@ const model = {
     },
 
     tables: [
-        {
-            name: 'Bord 1',
-            content: [
-            {Bestilling: 'content'},//Alle bestillinger på et bord.
-            {kommentar: 'content'},//Komentar på hver enkelt bestilling
-            {pris: 'number'},//Total pris for alle bestillingene
-            {waitor: 'Henrik'},//Hvilken servitør som har sendt bestilling.
-            {Checkbox: IsChecked},//Checkbox på når maten er ferdig fra kjøkken.
-            ],
-        },
-        {
-            name: 'Bord 2',
-            content: [
-                {Bestilling: 'content'},
-                {kommentar: 'content'},
-                {pris: 'number'},
-                {waitor: 'Henrik'},
-                {Checkbox: IsChecked},
-                ],
-        },
-        {
-            name: 'Bord 3',
-            content: [
-                {Bestilling: 'content'},
-                {kommentar: 'content'},
-                {pris: 'number'},
-                {waitor: 'Henrik'},
-                {Checkbox: IsChecked},
-                ],
-        },
+        {name: 'Bord 1'},
+        {name: 'Bord 2'},
+        {name: 'Bord 3'},
+        {name: 'Bord 4'},
     ],
 
     category: [
@@ -139,5 +113,67 @@ const model = {
                 },
             ],
         },
-    ],    
-}  
+    ], 
+    Order: [
+            //servitør 0
+            [
+                //Bord 0
+                [
+                    {
+                        måtlid: 'taco',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
+                    }
+                ],
+                //Bord 1
+                [
+                    {
+                        måtlid: 'taco',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
+                    }
+                ],
+                //Bord 2
+                [
+                    {
+                        måtlid: 'taco',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
+                    }
+                ],
+            ],
+            //servitør 1
+            [
+                //Bord 0
+                [
+                    {
+                        måtlid: 'taco',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
+                    }
+                ],
+                //Bord 1
+                [
+                    {
+                        måtlid: 'taco',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
+                    }
+                ],
+                //Bord 2
+                [
+                    {
+                        måtlid: 'taco',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
+                    }
+                ],
+            ],
+], 
+}
