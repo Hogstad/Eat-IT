@@ -68,3 +68,4 @@ function selectedTable(num) {
 function getDataWaitor(inputText) {
     addWaitor = inputText;
 }
+
