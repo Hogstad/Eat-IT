@@ -185,18 +185,27 @@
 
 #editFoodViewCss {
     position: relative;
-    top: -250px;
+    top: -220px;
     left: 200px;
-    height: 400px;
+    height: 300px;
 }
 
 #editFoodTable {
     position: relative;
     top: 20px;
     left: 1px;
+    border-collapse: collapse;
 }
 
 #editFoodTable th {
     border: solid 1px black;
+    border-collapse: collapse;
+    
+}
+
+#editFoodTable td {
+    border: solid 1px black;
+    border-collapse: collapse;
+    text-align: center;
     
 }

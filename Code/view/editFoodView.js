@@ -45,6 +45,22 @@ function editFoodView() {
                         <th>Ingredienser</th>
                         <th>Fjern</th>
                     </tr>
+                    <tr>
+                    <td>Kjøttdeig</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                    <td>Tacolefse</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                    <td>Tacokrydder</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                    <td>NASA material</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
                 </table>
             
             </div>
