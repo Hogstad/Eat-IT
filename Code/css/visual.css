@@ -181,3 +181,22 @@
     position: relative;
     top: 50px;
 }
+/* editFoodTable css */
+
+#editFoodViewCss {
+    position: relative;
+    top: -250px;
+    left: 200px;
+    height: 400px;
+}
+
+#editFoodTable {
+    position: relative;
+    top: 20px;
+    left: 1px;
+}
+
+#editFoodTable th {
+    border: solid 1px black;
+    
+}

@@ -22,10 +22,36 @@ function editFoodView() {
             </div>
             `;
             html += `
-            <div id="mainViewShowDishes">${model.showDishes}</div>
+            <div id="editFoodViewCss">
+                <select onchange="selectedTable(this.value, true)"> `;
+                    for(let i = 0; i <model.tables.names.length; i++) {
+                        if (i == model.selectedTable) {
+            html += `
+                <option selected value="${i}">${model.tables.names[i].name}</option>
+                    `;
+            }
+                        else {
+            html += `
+                <option value="${i}">${model.tables.names[i].name}</option>
+                    `;
+            }
+            }
+            html += `
+            </select>
+            `;
+            html += `
+                <table id="editFoodTable" style="width: 30%">
+                    <tr>
+                        <th>Ingredienser</th>
+                        <th>Fjern</th>
+                    </tr>
+                </table>
+            
+            </div>
             `;
             
         divApp.innerHTML = html;
+        selectedTable();
 };
 
 
