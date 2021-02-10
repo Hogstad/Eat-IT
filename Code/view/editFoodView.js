@@ -24,7 +24,8 @@ function editFoodView(index) {
             `;
             html += `
             <div id="editFoodViewCss">
-                <select onchange="selectedTable(this.value, true)"> `;
+            <button id="visFremNavn"><b>${model.category[model.selectedCategory].retter[model.selectedFood].navn}</b></button>
+                <select id="bordCss" onchange="selectedTable(this.value, true)"> `;
                     for(let i = 0; i <model.tables.names.length; i++) {
                         if (i == model.selectedTable) {
             html += `
@@ -47,7 +48,6 @@ function editFoodView(index) {
                         <th>Fjern</th>
                     </tr>
                     `;
-                    console.log(model.selectedFood);
                     let ingr = model.category[model.selectedCategory].retter[model.selectedFood].ingredients;
                     for (let liste = 0; liste < ingr.length; liste++) {
                         html += `

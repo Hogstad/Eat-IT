@@ -181,13 +181,14 @@
     position: relative;
     top: 50px;
 }
-/* editFoodTable css */
+/* editFoodView css */
 
 #editFoodViewCss {
     position: relative;
-    top: -220px;
+    top: -320px;
     left: 200px;
     height: 300px;
+    width: 800px;
 }
 
 #editFoodTable {
@@ -208,4 +209,18 @@
     border-collapse: collapse;
     text-align: center;
     
+}
+
+#bordCss {
+    position: relative;
+    right: -125px;
+    top: 17px;
+}
+
+#visFremNavn {
+    position: relative;
+    top: 17px;
+    border: 1px solid black;
+    width: 50px;
+
 }
