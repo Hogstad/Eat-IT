@@ -38,7 +38,7 @@ function orderViewWaiter(index) {
                     <tr>
                         <td>${model.order[model.selectedWaitor][i][j].måltid}</td>
                         <td>`;
-                    for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWantet.length; k++) {
+                    for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWanted.length; k++) {
                         
                     }
                         
