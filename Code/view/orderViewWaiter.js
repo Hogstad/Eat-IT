@@ -41,10 +41,7 @@ function orderViewWaiter(index) {
                     for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWanted.length; k++) {
                      html += `  
                       ${model.order[model.selectedWaitor][i][j].notWanted[k]}`;
-                      
                     }
-                        
-
                         html += `
                         ${model.order[model.selectedWaitor][i][j].kommentar}
                         </td>
@@ -59,7 +56,6 @@ function orderViewWaiter(index) {
          
         divApp.innerHTML = html;
 };
-
 // html += `
 //                 <div>
                 
