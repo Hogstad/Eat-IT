@@ -1,6 +1,8 @@
 // skjermbilde 11!!!!!!!!!!!!!!!!
 
-function orderViewWaiter() {
+function orderViewWaiter(index) {
+    selectedWaitor(index)
+    selectedTable(index)
     let html = "";
     html += `
             <div id="mainViewButtons">
