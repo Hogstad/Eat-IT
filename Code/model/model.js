@@ -44,7 +44,6 @@ const model = {
                         {name: 'isbergsalat'},
                         {name: 'slangeagurk'},
                         {name: 'tomater'},
-                        {name: 'tomater'},
                         {name: 'mais'},
                         {name: 'gulost'},
                         {name: 'rømme'},

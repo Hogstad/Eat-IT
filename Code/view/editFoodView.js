@@ -47,9 +47,6 @@ function editFoodView(index) {
                         <th>Fjern</th>
                     </tr>
                     `;
-
-                    // Bytte til model.category.length
-                    // td må være string interpolationed
                     console.log(model.selectedFood);
                     let ingr = model.category[model.selectedCategory].retter[model.selectedFood].ingredients;
                     for (let liste = 0; liste < ingr.length; liste++) {
