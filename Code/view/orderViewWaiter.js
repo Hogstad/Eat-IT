@@ -23,8 +23,10 @@ function orderViewWaiter() {
                 <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
             `;
-            html += `
+            for (let j = 0; j < model.Order[model.selectedWaitor][model.selectedTable]; j++) {
+                html += `
                 <div>
+                
                     <table>
                         <th>Bord 1</th>
                         <th>Henrik</th>
@@ -37,6 +39,24 @@ function orderViewWaiter() {
                 </div>
             
             `;
+            };
+            
          
         divApp.innerHTML = html;
 };
+
+// html += `
+//                 <div>
+                
+//                     <table>
+//                         <th>Bord 1</th>
+//                         <th>Henrik</th>
+//                         <tr>
+//                         <td>Taco</td>
+//                         <td>Ingr</td>
+//                         <td><input type="checkbox"></td>
+//                         </tr>
+//                     </table>
+//                 </div>
+            
+//             `;
