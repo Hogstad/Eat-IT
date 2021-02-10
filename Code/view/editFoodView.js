@@ -60,8 +60,11 @@ function editFoodView(index) {
 
                     html += `
                 </table>
-            
-            </div>
+                    <br>
+                    <br>
+                    <input style="width: 235px;" type="text" placeholder="Kommentarer"></input>
+                    <button style="position: relative; top: 25px; left: -72px;">Send inn</button>
+            </div>  
             `;
             
         divApp.innerHTML = html;
