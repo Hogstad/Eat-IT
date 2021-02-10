@@ -20,23 +20,8 @@ function orderViewWaiter() {
             html += `
             </select>
                 <button>Legg til ny bruker</button>
-                <button>Ordre</button>
+                <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
-                `;
-                html += `
-                <div id="oneDiv">
-                `;
-            for(let i = 0; i < model.category.length; i++) {
-                html += `
-                    <button id="mainViewCategory">${model.category[i].type}</button>    
-               `;
-            };
-            html += `
-                <button id="addCategory">Legg til</button>
-            </div>
-            `;
-            html += `
-            <div id="mainViewShowDishes">${model.showDishes}</div>
             `;
          
         divApp.innerHTML = html;

@@ -19,8 +19,8 @@ function addCategoryView() {
             }
             html += `
             </select>
-                <button>Legg til ny bruker</button>
-                <button>Ordre</button>
+                <button onclick="addUserView()">Legg til ny bruker</button>
+                <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
                 `;
                 html += `
