@@ -1,7 +1,7 @@
 // skjermbilde 11!!!!!!!!!!!!!!!!
 
 function orderViewWaiter(index) {
-    selectedWaitor(index)
+    // selectedWaitor(index)
     selectedTable(index)
     let html = "";
     html += `
@@ -25,24 +25,34 @@ function orderViewWaiter(index) {
                 <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
             `;
-            for (let j = 0; j < model.Order[model.selectedWaitor][model.selectedTable]; j++) {
-                html += `
-                <div>
-                
-                    <table>
-                        <th>Bord 1</th>
-                        <th>Henrik</th>
-                        <tr>
-                        <td>Taco</td>
-                        <td>Ingr</td>
-                        <td><input type="checkbox"></td>
-                        </tr>
-                    </table>
-                </div>
-            
+            html += `
+                <table style="width: 50%">
             `;
+            for (let i = 0; i < model.order[model.selectedWaitor].length; i++) {
+                html += `
+                    <td><b>Bord: ${i + 1}</b></td>
+                    <td><b>${model.waitor.names[model.selectedWaitor].name}</b></td>
+                `;
+                for (let j = 0; j < model.order[model.selectedWaitor][i].length; j++){
+                    html += `
+                    <tr>
+                        <td>${model.order[model.selectedWaitor][i][j].måltid}</td>
+                        <td>`;
+                    for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWantet.length; k++) {
+                        
+                    }
+                        
+
+                        html += `
+                        </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    `;
+                }
             };
-            
+            html += `
+                </table>
+            `;
          
         divApp.innerHTML = html;
 };
@@ -56,6 +66,22 @@ function orderViewWaiter(index) {
 //                         <tr>
 //                         <td>Taco</td>
 //                         <td>Ingr</td>
+//                         <td><input type="checkbox"></td>
+//                         </tr>
+//                     </table>
+//                 </div>
+            
+//             `;
+
+// `
+//                 <div>
+                
+//                     <table>
+//                         <th>${model.Order[model.selectedWaitor][model.selectedTable]}</th>
+//                         <th>${model.Order[model.selectedWaitor]}</th>
+//                         <tr>
+//                         <td>${model.Order[model.selectedWaitor][model.selectedTable].måltid}</td>
+//                         <td>${model.Order[model.selectedWaitor][model.selectedTable].notwanted}, ${model.Order[model.selectedWaitor][model.selectedTable].kommentar}</td>
 //                         <td><input type="checkbox"></td>
 //                         </tr>
 //                     </table>

@@ -2,7 +2,7 @@
 const divApp = document.getElementById("app");
 
 const model = {
-    selectedWaitor: "",
+    selectedWaitor: "0",
     selectedTable: "",
     selectedCategory: "",
     selectedFood: "",
@@ -117,7 +117,7 @@ const model = {
             ],
         },
     ], 
-    Order: [
+    order: [
             //servitør 0
             [
                 //Bord 0
