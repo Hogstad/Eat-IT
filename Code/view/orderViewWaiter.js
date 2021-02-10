@@ -19,7 +19,7 @@ function orderViewWaiter() {
             }
             html += `
             </select>
-                <button>Legg til ny bruker</button>
+                <button onclick="mainView()">Home</button>
                 <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
             `;
