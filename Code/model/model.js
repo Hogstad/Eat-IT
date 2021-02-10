@@ -153,6 +153,16 @@ const model = {
                         kommentar: '',
                     }
                 ],
+
+                //Bord 3
+                [
+                    {
+                        måltid: 'taco',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
+                    }
+                ],
             ],
             //servitør 1
             [
@@ -175,6 +185,15 @@ const model = {
                     }
                 ],
                 //Bord 2
+                [
+                    {
+                        måltid: 'taco',
+                        pris: '100,-',
+                        notWantet: [/*ikke ønsket ingr*/],
+                        kommentar: '',
+                    }
+                ],
+                //Bord 3
                 [
                     {
                         måltid: 'taco',

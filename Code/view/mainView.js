@@ -5,7 +5,7 @@ function mainView() {
     html += `
             <div id="mainViewButtons">
             
-            <select onchange="selectedWaitor(this.value, true)"> `;
+            <select onchange="selectedWaitor(this.value)"> `;
             for(let i = 0; i <model.waitor.names.length; i++) {
                 if (i == model.selectedWaitor) {
                     html += `
@@ -21,7 +21,7 @@ function mainView() {
             html += `
             </select>
                 <button onclick="addUserView()">Legg til ny bruker</button>
-                <button>Ordre</button>
+                <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
                 `;
                 html += `
