@@ -39,11 +39,14 @@ function orderViewWaiter(index) {
                         <td>${model.order[model.selectedWaitor][i][j].måltid}</td>
                         <td>`;
                     for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWanted.length; k++) {
-                        
+                     html += `  
+                      ${model.order[model.selectedWaitor][i][j].notWanted[k]}`;
+                      
                     }
                         
 
                         html += `
+                        ${model.order[model.selectedWaitor][i][j].kommentar}
                         </td>
                         <td><input type="checkbox"></td>
                     </tr>
