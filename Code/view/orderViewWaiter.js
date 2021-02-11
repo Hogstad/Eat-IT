@@ -29,11 +29,16 @@ function orderViewWaiter(index) {
                 <table id="orderViewWaiterCss"style="width: 50%">
             `;
             for (let i = 0; i < model.order[model.selectedWaitor].length; i++) {
+                let totalPris = 0;
                 html += `
                     <td><b>Bord: ${i + 1}</b></td>
                     <td><b>${model.waitor.names[model.selectedWaitor].name}</b></td>
                 `;
                 for (let j = 0; j < model.order[model.selectedWaitor][i].length; j++){
+                    console.log(model.order[model.selectedWaitor][i][j]);
+                    // for (let p = 0; p < model.order[model.selectedWaitor][i][j]; p++) {
+                        totalPris += model.order[model.selectedWaitor][i][j].pris;
+                    // }
                     html += `
                     <tr>
                         <td>${model.order[model.selectedWaitor][i][j].måltid}</td>
@@ -46,11 +51,17 @@ function orderViewWaiter(index) {
                         html += `
                         ${model.order[model.selectedWaitor][i][j].kommentar}
                         </td>
-                        <td><b>${model.order[model.selectedWaitor][i][j].pris}</b></td>
                         <td><input type="checkbox"></td>
                     </tr>
                     `;
-                }
+                    
+                };
+                html += `
+                    <tr>
+                    <td style="border:none;"></td>
+                    <td>${totalPris}</td>
+                    </tr>
+                `;
             };
             html += `
                 </table>

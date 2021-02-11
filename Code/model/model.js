@@ -124,22 +124,22 @@ const model = {
                 [
                     {
                         måltid: 'taco',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                     },
                     {
                         måltid: 'Melk',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: 'hihi',
-                    }
+                    },
                 ],
                 //Bord 1
                 [
                     {
                         måltid: 'taco',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*"gluten", "laktose"*/],
                         kommentar: '10hi',
                     }
@@ -148,7 +148,7 @@ const model = {
                 [
                     {
                         måltid: 'taco',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                     }
@@ -158,7 +158,7 @@ const model = {
                 [
                     {
                         måltid: 'taco',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                     }
@@ -170,7 +170,7 @@ const model = {
                 [
                     {
                         måltid: 'taco',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                     }
@@ -179,7 +179,7 @@ const model = {
                 [
                     {
                         måltid: 'taco',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                     }
@@ -188,7 +188,7 @@ const model = {
                 [
                     {
                         måltid: 'taco',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                     }
@@ -197,7 +197,7 @@ const model = {
                 [
                     {
                         måltid: 'taco',
-                        pris: '100,-',
+                        pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                     }
