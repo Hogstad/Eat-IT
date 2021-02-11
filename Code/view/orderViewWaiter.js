@@ -26,7 +26,7 @@ function orderViewWaiter(index) {
             </div> 
             `;
             html += `
-                <table style="width: 50%">
+                <table id="orderViewWaiterCss"style="width: 50%">
             `;
             for (let i = 0; i < model.order[model.selectedWaitor].length; i++) {
                 html += `
@@ -40,7 +40,9 @@ function orderViewWaiter(index) {
                         <td>`;
                     for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWanted.length; k++) {
                      html += `  
-                      ${model.order[model.selectedWaitor][i][j].notWanted[k]}`;
+                      ${model.order[model.selectedWaitor][i][j].notWanted[k]}
+                      <td><b>${model.order[model.selectedWaitor][i][j].pris}</b></td>
+                      `;
                     }
                         html += `
                         ${model.order[model.selectedWaitor][i][j].kommentar}

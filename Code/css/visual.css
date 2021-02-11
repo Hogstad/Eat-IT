@@ -222,5 +222,10 @@
     top: 17px;
     border: 1px solid black;
     width: 50px;
+}
+/* orderViewWaiterCss */
 
+#orderViewWaiterCss td {
+    border: solid 1px black;
+    border-collapse: collapse;
 }
