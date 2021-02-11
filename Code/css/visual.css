@@ -225,7 +225,12 @@
 }
 /* orderViewWaiterCss */
 
+#orderViewWaiterCss {
+
+}
+
 #orderViewWaiterCss td {
     border: solid 1px black;
     border-collapse: collapse;
+    clear: left;
 }
