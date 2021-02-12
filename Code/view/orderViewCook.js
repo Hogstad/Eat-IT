@@ -1,5 +1,8 @@
 // skjermbilde 7, 8!!!!!!!!!!!!!!!!!!!
-function orderViewCook() {
+
+function orderViewCook(index) {
+    // selectedWaitor(index)
+    selectedTable(index)
     let html = "";
     html += `
             <div id="mainViewButtons">
@@ -18,9 +21,47 @@ function orderViewCook() {
             }
             html += `
             </select>
-                <button>Legg til ny bruker</button>
+                <button onclick="mainView()">Home</button>
                 <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
+            `;
+            html += `
+                <table id="orderViewWaiterCss"style="width: 50%">
+            `;
+            for (let i = 0; i < model.order[model.selectedWaitor].length; i++) {
+                let totalPris = 0;
+                html += `
+                    <td><b>Bord: ${i + 1}</b></td>
+                    <td><b>${model.waitor.names[model.selectedWaitor].name}</b></td>
+                `;
+                for (let j = 0; j < model.order[model.selectedWaitor][i].length; j++){
+                        totalPris += model.order[model.selectedWaitor][i][j].pris;
+                    html += `
+                    <tr>
+                        <td>${model.order[model.selectedWaitor][i][j].måltid}</td>
+                        <td>`;
+                    for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWanted.length; k++) {
+                     html += `  
+                      ${model.order[model.selectedWaitor][i][j].notWanted[k]}
+                      `;
+                    }
+                        html += `
+                        ${model.order[model.selectedWaitor][i][j].kommentar}
+                        </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    `;
+                    
+                };
+                html += `
+                    <tr>
+                    <td style="border:none;"></td>
+                    <td>${totalPris}</td>
+                    </tr>
+                `;
+            };
+            html += `
+                </table>
             `;
          
         divApp.innerHTML = html;
