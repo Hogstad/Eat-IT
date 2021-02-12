@@ -35,10 +35,7 @@ function orderViewWaiter(index) {
                     <td><b>${model.waitor.names[model.selectedWaitor].name}</b></td>
                 `;
                 for (let j = 0; j < model.order[model.selectedWaitor][i].length; j++){
-                    console.log(model.order[model.selectedWaitor][i][j]);
-                    // for (let p = 0; p < model.order[model.selectedWaitor][i][j]; p++) {
                         totalPris += model.order[model.selectedWaitor][i][j].pris;
-                    // }
                     html += `
                     <tr>
                         <td>${model.order[model.selectedWaitor][i][j].måltid}</td>
