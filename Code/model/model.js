@@ -117,11 +117,19 @@ const model = {
             ],
         },
     ], 
+
+        // model.order[i] = liste over alle bord.
+        // model.order[i][j] = liste over måltider på et bord.
+        // model.order[i][j][k] = et objekt med måltidet.
+        // model.order[i][j][k].notWanted = en liste over ikke ønskede ingredienser.
+
+        // Servitører
     order: [
-            //servitør 0
+            // Bord
             [
-                //Bord 0
+                // Måltider
                 [
+                    // Måltid
                     {
                         måltid: 'taco',
                         pris: 100,

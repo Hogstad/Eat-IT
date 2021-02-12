@@ -29,21 +29,21 @@ function orderViewCook(index) {
             `;
             for (let i = 0; i < model.order.length; i++) {
                 html += `
+                
+                `;
+                for (let j = 0; j < model.order[i].length; j++){
+                    html += `
                     <td><b>Bord: ${i + 1}</b></td>
                     <td><b>${model.waitor.names[i].name}</b></td>
-                `;
-                for (let j = 0; j < model.order[model.selectedWaitor][i].length; j++){
-                    html += `
                     <tr>
-                        <td>${model.order[model.selectedWaitor][i][j].måltid}</td>
-                        <td>`;
-                    for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWanted.length; k++) {
+                        <td>${model.order[i][j]}</td>
+                    //     <td>`;
+                    for (let k = 0; k < model.order[i][j].length; k++) {
                      html += `  
-                      ${model.order[model.selectedWaitor][i][j].notWanted[k]}
+                      ${model.order[i][j][k].måltid}
                       `;
                     }
                         html += `
-                        ${model.order[model.selectedWaitor][i][j].kommentar}
                         </td>
                         <td><input type="checkbox"></td>
                     </tr>
@@ -67,3 +67,5 @@ function orderViewCook(index) {
 // Table med type på toppen "navn"
 // Så pushe inn alle ingr.
 // Så legge til en checkbox på siden.
+
+ // ${model.order[model.selectedWaitor][i][j].kommentar}
