@@ -132,7 +132,7 @@ const model = {
                         måltid: 'Melk',
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
-                        kommentar: 'hihi',
+                        kommentar: '',
                     },
                 ],
                 //Bord 1
@@ -141,7 +141,7 @@ const model = {
                         måltid: 'taco',
                         pris: 100,
                         notWanted: [/*"gluten", "laktose"*/],
-                        kommentar: '10hi',
+                        kommentar: '',
                     }
                 ],
                 //Bord 2
