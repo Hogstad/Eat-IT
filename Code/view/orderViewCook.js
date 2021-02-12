@@ -1,7 +1,6 @@
 // skjermbilde 7, 8!!!!!!!!!!!!!!!!!!!
 
 function orderViewCook(index) {
-    // selectedWaitor(index)
     selectedTable(index)
     let html = "";
     html += `
@@ -28,14 +27,12 @@ function orderViewCook(index) {
             html += `
                 <table id="orderViewWaiterCss"style="width: 50%">
             `;
-            for (let i = 0; i < model.order[model.selectedWaitor].length; i++) {
-                let totalPris = 0;
+            for (let i = 0; i < model.order.length; i++) {
                 html += `
                     <td><b>Bord: ${i + 1}</b></td>
-                    <td><b>${model.waitor.names[model.selectedWaitor].name}</b></td>
+                    <td><b>${model.waitor.names[i].name}</b></td>
                 `;
                 for (let j = 0; j < model.order[model.selectedWaitor][i].length; j++){
-                        totalPris += model.order[model.selectedWaitor][i][j].pris;
                     html += `
                     <tr>
                         <td>${model.order[model.selectedWaitor][i][j].måltid}</td>
@@ -56,7 +53,6 @@ function orderViewCook(index) {
                 html += `
                     <tr>
                     <td style="border:none;"></td>
-                    <td>${totalPris}</td>
                     </tr>
                 `;
             };
