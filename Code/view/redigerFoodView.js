@@ -61,8 +61,7 @@ function redigerFoodView(index) {
                 </table>
                     <br>
                     <br>
-                    <input style="width: 235px;" type="text" placeholder=""></input>
-                    <button style="position: relative; top: 25px; left: -72px;">Send inn</button>
+                    <button style="position: relative; top: 25px; left: -72px;">Rediger</button>
             </div>  
             `;
             
