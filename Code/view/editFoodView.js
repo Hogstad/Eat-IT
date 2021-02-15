@@ -67,7 +67,7 @@ function editFoodView(index) {
                         html += `
                             <tr>
                                 <td>${ingr[liste].name}</td>
-                                <td><input type="checkbox"></td>
+                                <td><input value="${ingr[liste].name}" type="checkbox" onchange="notWantedList(this)"></td>
                             </tr>
                         `;
                     }
@@ -76,13 +76,13 @@ function editFoodView(index) {
                 </table>
                     <br>
                     <br>
-                    <input style="width: 235px;" type="text" placeholder="Kommentarer"></input>
-                    <button style="position: relative; top: 25px; left: -72px;">Send inn</button>
+                    <input style="width: 235px;" oninput="getDataKommentar(this.value)" type="text" placeholder="Kommentarer"></input>
+                    <button style="position: relative; top: 25px; left: -72px;" onclick="bestilling()">Send inn</button>
             </div>  
             `;
             
         divApp.innerHTML = html;
-        selectedTable();
+        // selectedTable();
 };
 
 

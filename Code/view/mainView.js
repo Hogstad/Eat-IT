@@ -7,7 +7,7 @@ function mainView() {
             
             <select onchange="selectedWaitor(this.value)"> `;
             html += `
-            <option onclick="orderViewCook()">Kokk</option>
+            <option value="Kokk">Kokk</option>
             `;
             for(let i = 0; i <model.waitor.names.length; i++) {
                 if (i == model.selectedWaitor) {
@@ -62,7 +62,7 @@ function printCategory(index) {
         }
         html += `
             </h4>
-                <button class="coloredButtons" onclick="redigerFoodView(${i})">Rediger</button>
+                <button class="coloredButtons">Rediger</button>
                 <button class="coloredButtons" onclick="editFoodView(${i})">Bestill</button>
             </div>
         `;

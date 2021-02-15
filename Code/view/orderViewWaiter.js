@@ -42,7 +42,7 @@ function orderViewWaiter(index) {
                         <td>`;
                     for (let k = 0; k < model.order[model.selectedWaitor][i][j].notWanted.length; k++) {
                      html += `  
-                      ${model.order[model.selectedWaitor][i][j].notWanted[k]}
+                      -${model.order[model.selectedWaitor][i][j].notWanted[k]},
                       `;
                     }
                         html += `
@@ -56,7 +56,7 @@ function orderViewWaiter(index) {
                 html += `
                     <tr>
                     <td style="border:none;"></td>
-                    <td>${totalPris}</td>
+                    <td>Sum: ${totalPris},-</td>
                     </tr>
                 `;
             };

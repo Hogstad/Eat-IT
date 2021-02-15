@@ -77,3 +77,29 @@ function selectedFood(num) {
 function getDataWaitor(inputText) {
     addWaitor = inputText;
 }
+
+function getDataKommentar(text) {
+    model.kommentar = text;
+    return text;
+}
+
+function bestilling() {
+        let x = {
+            måltid: model.category[model.selectedCategory].retter[model.selectedFood].navn,
+            pris: model.category[model.selectedCategory].retter[model.selectedFood].pris,
+            notWanted: model.notWanted,
+            kommentar: model.kommentar,
+        }
+        model.order[model.selectedWaitor][model.selectedTable].push(x);
+}
+
+function notWantedList(checky) {
+    if (checky.checked) {
+        model.notWanted.push(checky.value);
+    }
+    else {
+       let index = model.notWanted.indexOf(checky.value);
+       model.notWanted.splice(index, 1);
+        
+    } 
+};

@@ -3,7 +3,7 @@ const divApp = document.getElementById("app");
 
 const model = {
     selectedWaitor: "0",
-    selectedTable: "",
+    selectedTable: 1,
     selectedCategory: "",
     selectedFood: "",
     addWaitor: "",
@@ -13,6 +13,8 @@ const model = {
     addPris: "",
     showDishes: "",
     checkedBox: "",
+    kommentar: "",
+    notWanted: [],
     
     waitor: {
         names: [
@@ -36,7 +38,7 @@ const model = {
             retter: [
                 {
                     navn: 'Taco',
-                    pris: '100,-',
+                    pris: 100,
                     ingredients: [
                         {name: 'Kjøttdeig'},
                         {name: 'tacokrydder'},
@@ -51,7 +53,7 @@ const model = {
                 },
                 {
                     navn: 'Fersk vårruller med kylling',
-                    pris: '100,-',
+                    pris: 100,
                     ingredients: [
                         {name: 'kyllingfilet'},
                         {name: 'gulrot'},
@@ -71,7 +73,7 @@ const model = {
             retter: [
                 {
                     navn: 'Taco Salat',
-                    pris: '100,-',
+                    pris: 100,
                     ingredients: [
                         {name: 'karbonadedeig'},
                         {name: 'hvitløk'},
@@ -95,7 +97,7 @@ const model = {
             retter: [
                 {
                     navn: 'Kake',
-                    pris: '100,-',
+                    pris: 100,
                     ingredients: [
                         {name: 'kakemix'},
                         
@@ -108,7 +110,7 @@ const model = {
             retter: [
                 {
                     navn: 'Melk',
-                    pris: '100,-',
+                    pris: 100,
                     ingredients: [
                         {name: 'Ku Melk'},
                         
@@ -133,8 +135,8 @@ const model = {
                     {
                         måltid: 'taco',
                         pris: 100,
-                        notWanted: ["-gluteeeen"],
-                        kommentar: 'HEEEEEI',
+                        notWanted: ["kjøttdeig"],
+                        kommentar: 'Vegetar rett',
                     },
                     {
                         måltid: 'Melk',
