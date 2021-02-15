@@ -1,7 +1,6 @@
 // skjermbilde 7, 8!!!!!!!!!!!!!!!!!!!
 
-function orderViewCook(index) {
-    selectedTable(index)
+function orderViewCook() {
     let html = "";
     html += `
             <div id="mainViewButtons">
@@ -25,21 +24,47 @@ function orderViewCook(index) {
             </div> 
             `;
             html += `
-                <table id="orderViewWaiterCss"style="width: 50%">   
-                        <td><b>Servitør</b></td>
+                <table id="orderViewWaiterCss"style="width: 50%">
+                `;
+            for (let servitør = 0; servitør < model.order.length; servitør++) {
+                html += `
+                        <td><b>${[servitør]}</b></td><br>
+                `;
+                for (let bord = 0; bord < model.order[servitør].length; bord++) {
+                    html+= `     
                     <tr>
-                        <td>Bord 1<b></b></td>
-                        <td>Måltid</td>
-                        <td>Ikke ønsket ingr/kommentarer</td>
-                        <td><input type="checkbox"></td>
+                        <td><b>Bord ${bord + 1}</b></td>
+                    `;
+                    for (let måltid = 0; måltid < model.order[servitør][bord].length; måltid++) {
+                        html += `
                     </tr>
                     <tr>
-                        <td style="border:none;"></td>
-                    </tr>
-                </table>
-    `;
-            
-         
+                        <td>${model.order[servitør][bord][måltid].måltid}</td>
+                        `;
+                        html += `
+                        <td>`;
+                        for (let nw = 0; nw < model.order[servitør][bord][måltid].notWanted.length; nw++) {
+                            html += `
+                                ${model.order[servitør][bord][måltid].notWanted[nw]}
+                                `;
+                            }
+                            html += `
+                                ${model.order[servitør][bord][måltid].kommentar}
+                                </td>
+                                <td><input type="checkbox"></td>
+                            </tr> 
+                            `;  
+                    };  
+                };
+                html += `
+                                <tr>
+                                    <td style="border:none;"></td>
+                                </tr>
+                                `;
+            };
+                html +=`
+                        </table>
+                        `;
         divApp.innerHTML = html;
 };
 
@@ -47,38 +72,3 @@ function orderViewCook(index) {
 // Table med type på toppen "navn"
 // Så pushe inn alle ingr.
 // Så legge til en checkbox på siden.
-
- // ${model.order[model.selectedWaitor][i][j].kommentar}
-
-//  for (let i = 0; i < model.order.length; i++) {
-//     html += `
-    
-//     `;
-//     for (let j = 0; j < model.order[i].length; j++){
-//         html += `
-//         <td><b>Bord: ${i + 1}</b></td>
-//         <td><b>${model.waitor.names[i].name}</b></td>
-//         <tr>
-//             <td>${model.order[i][j]}</td>
-//         //     <td>`;
-//         for (let k = 0; k < model.order[i][j].length; k++) {
-//          html += `  
-//           ${model.order[i][j][k].måltid}
-//           `;
-//         }
-//             html += `
-//             </td>
-//             <td><input type="checkbox"></td>
-//         </tr>
-//         `;
-        
-//     };
-//     html += `
-//         <tr>
-//         <td style="border:none;"></td>
-//         </tr>
-//     `;
-// };
-// html += `
-//     </table>
-// `;
