@@ -6,6 +6,9 @@ function mainView() {
             <div id="mainViewButtons">
             
             <select onchange="selectedWaitor(this.value)"> `;
+            html += `
+            <option onclick="orderViewCook()">Kokk</option>
+            `;
             for(let i = 0; i <model.waitor.names.length; i++) {
                 if (i == model.selectedWaitor) {
                     html += `

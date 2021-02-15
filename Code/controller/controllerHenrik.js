@@ -58,7 +58,12 @@ function selectedCategory(num) {
 }
 
 function selectedWaitor(num) {
-    model.selectedWaitor = num;
+    if (num == "Kokk") {
+        orderViewCook();
+    }
+    else {
+        model.selectedWaitor = num;
+    }
 }
 
 function selectedTable(num) {

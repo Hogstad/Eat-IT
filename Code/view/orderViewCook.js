@@ -28,7 +28,7 @@ function orderViewCook() {
                 `;
             for (let servitør = 0; servitør < model.order.length; servitør++) {
                 html += `
-                        <td><b>${[servitør]}</b></td><br>
+                        <td><b>${model.waitor.names[servitør].name}</b></td><br>
                 `;
                 for (let bord = 0; bord < model.order[servitør].length; bord++) {
                     html+= `     
