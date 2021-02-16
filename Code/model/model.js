@@ -3,7 +3,7 @@ const divApp = document.getElementById("app");
 
 const model = {
     selectedWaitor: "0",
-    selectedTable: 1,
+    selectedTable: 0,
     selectedCategory: "",
     selectedFood: "",
     addWaitor: "",
@@ -133,7 +133,7 @@ const model = {
                 [
                     // Måltid
                     {
-                        måltid: 'taco',
+                        måltid: 'Taco',
                         pris: 100,
                         notWanted: ["kjøttdeig"],
                         kommentar: 'Vegetar rett',
@@ -148,7 +148,7 @@ const model = {
                 //Bord 1
                 [
                     {
-                        måltid: 'taco',
+                        måltid: 'Taco',
                         pris: 100,
                         notWanted: [/*"gluten", "laktose"*/],
                         kommentar: '',
@@ -157,7 +157,7 @@ const model = {
                 //Bord 2
                 [
                     {
-                        måltid: 'taco',
+                        måltid: 'Taco',
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -167,7 +167,7 @@ const model = {
                 //Bord 3
                 [
                     {
-                        måltid: 'taco',
+                        måltid: 'Taco',
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -179,7 +179,7 @@ const model = {
                 //Bord 0
                 [
                     {
-                        måltid: 'taco',
+                        måltid: 'Taco',
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -188,7 +188,7 @@ const model = {
                 //Bord 1
                 [
                     {
-                        måltid: 'taco',
+                        måltid: 'Taco',
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -197,7 +197,7 @@ const model = {
                 //Bord 2
                 [
                     {
-                        måltid: 'taco',
+                        måltid: 'Taco',
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
@@ -206,7 +206,7 @@ const model = {
                 //Bord 3
                 [
                     {
-                        måltid: 'taco',
+                        måltid: 'Taco',
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
