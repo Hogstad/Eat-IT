@@ -46,7 +46,7 @@ function orderViewWaiter(index) {
                       `;
                     }
                         html += `
-                        ${model.order[model.selectedWaitor][i][j].kommentar}
+                        <b>${model.order[model.selectedWaitor][i][j].kommentar}<b>
                         </td>
                         <td><input type="checkbox"></td>
                     </tr>

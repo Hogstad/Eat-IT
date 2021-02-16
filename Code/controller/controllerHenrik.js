@@ -91,6 +91,7 @@ function bestilling() {
             kommentar: model.kommentar,
         }
         model.order[model.selectedWaitor][model.selectedTable].push(x);
+        orderViewWaiter();
 }
 
 function notWantedList(checky) {
