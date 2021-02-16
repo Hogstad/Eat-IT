@@ -5,6 +5,9 @@ function addCategoryView() {
     html += `
             <div id="mainViewButtons">
             <select onchange="selectedWaitor(this.value)"> `;
+            html += `
+            <option value="Kokk">Kokk</option>
+            `;
             for(let i = 0; i <model.waitor.names.length; i++) {
                 if (i == model.selectedWaitor) {
                     html += `
