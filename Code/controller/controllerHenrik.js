@@ -31,6 +31,7 @@ function saveNewRetter() {
         ingredients: model.addIngredients,
     }
     model.category[model.selectedCategory].retter.push(x);
+    printCategory(model.selectedCategory);
     mainView();
 }
 

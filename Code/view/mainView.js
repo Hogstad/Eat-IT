@@ -4,25 +4,9 @@ function mainView() {
     let html = "";
     html += `
             <div id="mainViewButtons">
-            
-            <select onchange="selectedWaitor(this.value)"> `;
-            html += `
-            <option value="Kokk">Kokk</option>
             `;
-            for(let i = 0; i <model.waitor.names.length; i++) {
-                if (i == model.selectedWaitor) {
-                    html += `
-                    <option selected value="${i}">${model.waitor.names[i].name}</option>
-                    `;
-                }
-                else {
-                    html += `
-                    <option value="${i}">${model.waitor.names[i].name}</option>
-                    `;
-                }
-            }
-            html += `
-            </select>
+            html += createWaitorOptions();
+            html +=`
                 <button onclick="addUserView()">Legg til ny bruker</button>
                 <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
@@ -30,9 +14,9 @@ function mainView() {
                 html += `
                 <div id="oneDiv">
                 `;
-            for(let i = 0; i < model.category.length; i++) {
+            for(let j = 0; j < model.category.length; j++) {
                 html += `
-                    <button onclick="printCategory(${i})" id="mainViewCategory">${model.category[i].type}</button>    
+                    <button onclick="printCategory(${j})" id="mainViewCategory">${model.category[j].type}</button>    
                `;
             };
             html += `
@@ -71,7 +55,30 @@ function printCategory(index) {
         
     `;
     model.showDishes = html;
-    selectedCategory(index);
-    selectedWaitor(index);
+    selectedCategory(index),
     mainView();
 };
+
+function createWaitorOptions() {
+    let html = ""; 
+    html +=`
+    <select onchange="selectedWaitor(this.value)"> `;
+            html += `
+            <option value="Kokk">Kokk</option>
+            `;
+            for(let i = 0; i <model.waitor.names.length; i++) {
+                if (i == model.selectedWaitor) {
+                    html += `
+                    <option selected value="${i}">${model.waitor.names[i].name}</option>
+                    `;
+                }
+                else {
+                    html += `
+                    <option value="${i}">${model.waitor.names[i].name}</option>
+                    `;
+                }
+            }
+            html += `
+            </select>`;
+    return html
+} 
