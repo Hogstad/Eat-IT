@@ -55,5 +55,4 @@ function redigerFoodView(index) {
             `;
             
         divApp.innerHTML = html;
-        selectedTable();
 };

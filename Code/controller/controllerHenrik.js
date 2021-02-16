@@ -104,9 +104,10 @@ function notWantedList(checky) {
 // funksjoner for rediger knappen!
 function redigerRett() {
     for (let i = 0; i < model.redigerListe.length; i++) {
-        model.category[model.selectedCategory].retter[model.selectedFood].ingredients.splice(model.redigerListe[i], 1);
+        model.category[model.selectedCategory].retter[model.selectedFood].ingredients.splice(model.redigerListe[0], 1);
     }
-    redigerFoodView();
+    model.redigerListe = [];
+    redigerFoodView(model.selectedFood);
 }
 
 function redigerRettHjelp(checky) {
@@ -117,5 +118,4 @@ function redigerRettHjelp(checky) {
        let index = model.redigerListe.indexOf(checky.value);
        model.redigerListe.splice(index, 1);
     } 
-    console.log(model.redigerListe);
 };
