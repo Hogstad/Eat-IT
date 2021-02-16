@@ -1,5 +1,3 @@
-// skjermbilde 7, 8!!!!!!!!!!!!!!!!!!!
-
 function editFoodView(index) {
     selectedFood(index);
     let html = "";

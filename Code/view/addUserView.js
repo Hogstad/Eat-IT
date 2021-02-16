@@ -1,5 +1,3 @@
-// skjermbilde 5!!!!!!!!!!!!!
-
 function addUserView() {
     let html = "";
     html += `

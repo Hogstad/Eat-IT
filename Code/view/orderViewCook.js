@@ -1,5 +1,3 @@
-// skjermbilde 7, 8!!!!!!!!!!!!!!!!!!!
-
 function orderViewCook() {
     let html = "";
     html += `

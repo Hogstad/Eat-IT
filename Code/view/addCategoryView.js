@@ -1,5 +1,3 @@
-// skjermbilde 6!!!!!!!!!!!
-
 function addCategoryView() {
     let html = "";
     html += `

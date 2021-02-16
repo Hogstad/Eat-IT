@@ -1,5 +1,3 @@
-// skjermbilde 7, 8!!!!!!!!!!!!!!!!!!!
-
 function redigerFoodView(index) {
     selectedFood(index);
     selectedCategory(index)

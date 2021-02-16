@@ -1,5 +1,3 @@
-// skjermbilde 9, 10!!!!!!!!!
-
 function addFoodView() {
     let html = "";
     html += `

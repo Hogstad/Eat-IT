@@ -1,4 +1,3 @@
-
 mainView();
 function mainView() {
     let html = "";

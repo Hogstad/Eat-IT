@@ -12,7 +12,6 @@ function saveNewWaitor() {
     model.order.push(y);
     mainView();
 }
-
 //Function for å lagre ny Category i modellen.
 function saveNewCategory() {
     let x = {
@@ -22,7 +21,6 @@ function saveNewCategory() {
     model.category.push(x);
     mainView();
 }
-
 //Function for å lagre ny retter innen for category i mordellen.
 function saveNewRetter() {
     let x = {
@@ -34,7 +32,6 @@ function saveNewRetter() {
     printCategory(model.selectedCategory);
     mainView();
 }
-
 //Inputtext functions.
 function getDataCategory(inputText) {
     addCategory = inputText;
@@ -57,7 +54,6 @@ function getDataCategoryThree(inputTextCategory) {
 function getDataCategoryPrice(inputTextCategory) {
     model.addPris = inputTextCategory;
 }
-
 //Hjelpefunction for å velge servitør/category/table.
 function selectedCategory(num) {
     model.selectedCategory = num;
@@ -71,24 +67,19 @@ function selectedWaitor(num) {
         model.selectedWaitor = num;
     }
 }
-
 function selectedTable(num) {
     model.selectedTable = num;
 }
-
 function selectedFood(num) {
     model.selectedFood = num;
 }
-
 function getDataWaitor(inputText) {
     addWaitor = inputText;
 }
-
 function getDataKommentar(text) {
     model.kommentar = text;
     return text;
 }
-
 function bestilling() {
         let x = {
             måltid: model.category[model.selectedCategory].retter[model.selectedFood].navn,
@@ -99,7 +90,6 @@ function bestilling() {
         model.order[model.selectedWaitor][model.selectedTable].push(x);
         orderViewWaiter();
 }
-
 function notWantedList(checky) {
     if (checky.checked) {
         model.notWanted.push(checky.value);

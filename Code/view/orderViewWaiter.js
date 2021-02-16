@@ -1,12 +1,10 @@
-// skjermbilde 11!!!!!!!!!!!!!!!!
-
 function orderViewWaiter(index) {
     // selectedWaitor(index)
     selectedTable(index)
     let html = "";
     html += `
             <div id="mainViewButtons">
-            <select onchange="selectedWaitor(this.value)"> `;
+            <select onchange="selectedWaitor(this.value); orderViewWaiter();"> `;
             html += `
             <option value="Kokk">Kokk</option>
             `;
@@ -69,34 +67,3 @@ function orderViewWaiter(index) {
          
         divApp.innerHTML = html;
 };
-// html += `
-//                 <div>
-                
-//                     <table>
-//                         <th>Bord 1</th>
-//                         <th>Henrik</th>
-//                         <tr>
-//                         <td>Taco</td>
-//                         <td>Ingr</td>
-//                         <td><input type="checkbox"></td>
-//                         </tr>
-//                     </table>
-//                 </div>
-            
-//             `;
-
-// `
-//                 <div>
-                
-//                     <table>
-//                         <th>${model.Order[model.selectedWaitor][model.selectedTable]}</th>
-//                         <th>${model.Order[model.selectedWaitor]}</th>
-//                         <tr>
-//                         <td>${model.Order[model.selectedWaitor][model.selectedTable].måltid}</td>
-//                         <td>${model.Order[model.selectedWaitor][model.selectedTable].notwanted}, ${model.Order[model.selectedWaitor][model.selectedTable].kommentar}</td>
-//                         <td><input type="checkbox"></td>
-//                         </tr>
-//                     </table>
-//                 </div>
-            
-//             `;
