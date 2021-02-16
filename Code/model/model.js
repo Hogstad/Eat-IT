@@ -15,6 +15,7 @@ const model = {
     checkedBox: "",
     kommentar: "",
     notWanted: [],
+    redigerListe: [],
     
     waitor: {
         names: [

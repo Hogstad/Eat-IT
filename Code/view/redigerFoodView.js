@@ -1,6 +1,6 @@
 function redigerFoodView(index) {
     selectedFood(index);
-    selectedCategory(index)
+    // selectedCategory(index)
     let html = "";
     html += `
             <div id="mainViewButtons">
@@ -39,7 +39,7 @@ function redigerFoodView(index) {
                         html += `
                             <tr>
                                 <td>${ingr[liste].name}</td>
-                                <td><input type="checkbox"></td>
+                                <td><input type="checkbox" value="${liste}" oninput="redigerRettHjelp(this)"></td>
                             </tr>
                         `;
                     }
@@ -50,7 +50,7 @@ function redigerFoodView(index) {
                     <br>
                     <input style="width: 235px;" type="text" placeholder="Rediger"></input>
                     <button style="position: relative; top: 25px; left: -129px;">Legg til</button>
-                    <button style="position: relative; top: 25px; left: -129px;">Rediger</button>
+                    <button style="position: relative; top: 25px; left: -129px;" onclick="redigerRett()">Rediger</button>
             </div>  
             `;
             

@@ -80,6 +80,7 @@ function getDataKommentar(text) {
     model.kommentar = text;
     return text;
 }
+// funksjoner for bestilling!
 function bestilling() {
         let x = {
             måltid: model.category[model.selectedCategory].retter[model.selectedFood].navn,
@@ -99,4 +100,22 @@ function notWantedList(checky) {
        model.notWanted.splice(index, 1);
         
     } 
+};
+// funksjoner for rediger knappen!
+function redigerRett() {
+    for (let i = 0; i < model.redigerListe.length; i++) {
+        model.category[model.selectedCategory].retter[model.selectedFood].ingredients.splice(model.redigerListe[i], 1);
+    }
+    redigerFoodView();
+}
+
+function redigerRettHjelp(checky) {
+    if (checky.checked) {
+        model.redigerListe.push(checky.value);
+    }
+    else {
+       let index = model.redigerListe.indexOf(checky.value);
+       model.redigerListe.splice(index, 1);
+    } 
+    console.log(model.redigerListe);
 };
