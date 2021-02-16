@@ -66,7 +66,8 @@ function redigerFoodView(index) {
                     <br>
                     <br>
                     <input style="width: 235px;" type="text" placeholder="Rediger"></input>
-                    <button style="position: relative; top: 25px; left: -72px;">Rediger</button>
+                    <button style="position: relative; top: 25px; left: -129px;">Legg til</button>
+                    <button style="position: relative; top: 25px; left: -129px;">Rediger</button>
             </div>  
             `;
             

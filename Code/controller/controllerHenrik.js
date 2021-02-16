@@ -5,6 +5,11 @@ function saveNewWaitor() {
     }
     model.waitor.names.push(x);
     inputText = "";
+    let y = [];
+    for (let i = 0; i < model.tables.names.length; i++) {
+        y.push([]);
+    }
+    model.order.push(y);
     mainView();
 }
 

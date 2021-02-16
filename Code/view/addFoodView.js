@@ -39,7 +39,7 @@ function addFoodView() {
             </div>
             `;
             html += `
-            <div id="mainViewShowDishes">${model.showDishes}</div>
+            <div id="mainViewShowDishes"></div>
             <div id="addCategoryFood">
                 <h2>Legg til matrett og ingredienser</h2>
                 <br>
@@ -53,7 +53,7 @@ function addFoodView() {
             </form>
             <form id="addCategoryFoodThreePrice">
                 <label for="foodPrice">Pris på rett: </label>
-                <input type="text" id="kategoriNameTwo" name="foodPrice" oninput="getDataCategoryPrice(this.value)">
+                <input type="text" id="kategoriPrice" name="foodPrice" oninput="getDataCategoryPrice(this.value)">
             </form>
             <button onclick="saveNewRetter()">Legg til</button
             </div>

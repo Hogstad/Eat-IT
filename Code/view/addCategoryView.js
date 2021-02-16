@@ -39,7 +39,7 @@ function addCategoryView() {
             </div>
             `;
             html += `
-            <div id="mainViewShowDishes">${model.showDishes}</div>
+            <div id="mainViewShowDishes"></div>
             <div id="addCategoryPoppUp">
                 <h3>Ny kategori</h3>
                 <br>

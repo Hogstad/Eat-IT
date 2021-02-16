@@ -39,7 +39,7 @@ function addUserView() {
             </div>
             `;
             html += `
-            <div id="mainViewShowDishes">${model.showDishes}</div>
+            <div id="mainViewShowDishes"></div>
             <div id="addUserPoppUp">
                 <h3>Ny servitør</h3>
                 <br>
