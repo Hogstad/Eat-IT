@@ -230,55 +230,13 @@ const model = {
                     // model.order[i][j][k] = et objekt med måltidet.
                     // model.order[i][j][k].notWanted = en liste over ikke ønskede ingredienser.
     completeOrder: [
-        // Bord
-        [
-            // Måltider
-            [
-                // Måltid
-                {
-                    måltid: 'Taco',
-                    pris: 100,
-                    notWanted: ["kjøttdeig"],
-                    kommentar: 'Vegetar rett',
-                },
-                {
-                    måltid: 'Melk',
-                    pris: 100,
-                    notWanted: [/*ikke ønsket ingr*/],
-                    kommentar: '',
-                },
-            ],
-            //Bord 1
-            [
-            ],
-            //Bord 2
-            [
-            ],
-
-            //Bord 3
-            [
-            ],
-        ],
-        //servitør 1
-        [
-            //Bord 0
-            [
-                {
-                    måltid: 'Taco',
-                    pris: 100,
-                    notWanted: [/*ikke ønsket ingr*/],
-                    kommentar: '',
-                }
-            ],
-            //Bord 1
-            [
-            ],
-            //Bord 2
-            [
-            ],
-            //Bord 3
-            [
-            ],
-        ],
+        {
+            måltid: 'Taco',
+            pris: 100,
+            notWanted: [/*ikke ønsket ingr*/],
+            kommentar: '',
+            waiter: 'Henrik',
+            table: 'Bord 1',
+        },
     ], 
 }
