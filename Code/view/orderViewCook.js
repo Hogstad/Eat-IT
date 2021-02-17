@@ -52,7 +52,7 @@ function orderViewCook() {
                             html += `
                                 ${model.order[servitør][bord][måltid].kommentar}
                                 </td>
-                                <td><input type="checkbox"></td>
+                                <td><input ${model.order[servitør][bord][måltid].finnished ? "checked": ""} type="checkbox" onchange="cookFinnishedDish(${servitør}, ${bord}, ${måltid})"></td>
                             </tr> 
                             `;  
                     };  

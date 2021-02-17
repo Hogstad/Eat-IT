@@ -139,7 +139,7 @@ const model = {
                         pris: 100,
                         notWanted: ["kjøttdeig"],
                         kommentar: 'Vegetar rett',
-                        finnished: false,
+                        finnished: true,
                     },
                     {
                         måltid: 'Melk',

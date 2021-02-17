@@ -130,3 +130,8 @@ function redigerRettLeggTil() {
 function getDataLeggTilRediger(inputText) {
     model.leggTilRediger = inputText;
 }
+// Funksjon som skal la kokken velge at maten er klar.
+function cookFinnishedDish(servitør, bord, måltid) {
+    model.order[servitør][bord][måltid].finnished = true;
+    orderViewCook();
+}

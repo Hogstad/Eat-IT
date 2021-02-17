@@ -49,7 +49,7 @@ function orderViewWaiter(index) {
                         html += `
                         <b>${model.order[model.selectedWaitor][i][j].kommentar}<b>
                         </td>
-                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox">${model.order[model.selectedWaitor][i][j].finnished ? " Ready" : ""}</td>
                     </tr>
                     `;
                     
