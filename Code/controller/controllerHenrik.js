@@ -87,6 +87,7 @@ function bestilling() {
             pris: model.category[model.selectedCategory].retter[model.selectedFood].pris,
             notWanted: model.notWanted,
             kommentar: model.kommentar,
+            finnished: false,
         }
         model.order[model.selectedWaitor][model.selectedTable].push(x);
         orderViewWaiter();
