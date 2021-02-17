@@ -68,8 +68,3 @@ function completeOrderViewCook() {
                         `;
         divApp.innerHTML = html;
 };
-
-//Sette inn table for alle greiene i model.category[].retter[].ingredients 
-// Table med type på toppen "navn"
-// Så pushe inn alle ingr.
-// Så legge til en checkbox på siden.
