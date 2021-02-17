@@ -1,4 +1,4 @@
-function orderViewWaiter(index) {
+function completeOrderViewWaiter(index) {
     // selectedWaitor(index)
     selectedTable(index)
     let html = "";
