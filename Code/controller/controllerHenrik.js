@@ -135,3 +135,9 @@ function cookFinnishedDish(servitør, bord, måltid) {
     model.order[servitør][bord][måltid].finnished = true;
     orderViewCook();
 }
+// Funksjon som skal la servitøren levere retten.
+function dishDelivery(i, j) {
+    model.completeOrder.push(model.order[model.selectedWaitor][i][j]);
+    model.order[model.selectedWaitor][i].splice(j, 1);
+    orderViewWaiter();
+}
