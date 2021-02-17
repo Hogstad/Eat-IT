@@ -4,12 +4,12 @@ function orderViewCook() {
             <div id="mainViewButtons">
             <select onchange="selectedWaitor(this.value)"> `;
             html += `
-            <option value="Kokk">Kokk</option>
+            <option selected value="Kokk">Kokk</option>
             `;
             for(let i = 0; i <model.waitor.names.length; i++) {
                 if (i == model.selectedWaitor) {
                     html += `
-                    <option selected value="${i}">${model.waitor.names[i].name}</option>
+                    <option value="${i}">${model.waitor.names[i].name}</option>
                     `;
                 }
                 else {
