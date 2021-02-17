@@ -16,6 +16,7 @@ const model = {
     kommentar: "",
     notWanted: [],
     redigerListe: [],
+    leggTilRediger: "",
     
     waitor: {
         names: [

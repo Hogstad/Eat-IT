@@ -119,3 +119,13 @@ function redigerRettHjelp(checky) {
        model.redigerListe.splice(index, 1);
     } 
 };
+// funksjon for å legge til i redigerFoodView.
+function redigerRettLeggTil() {
+    let x = {name: model.leggTilRediger};
+    model.category[model.selectedCategory].retter[model.selectedFood].ingredients.push(x);
+    redigerFoodView(model.selectedFood);
+}
+
+function getDataLeggTilRediger(inputText) {
+    model.leggTilRediger = inputText;
+}
