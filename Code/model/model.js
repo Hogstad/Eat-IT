@@ -246,5 +246,13 @@ const model = {
             waiter: 'Henrik',
             table: 'Bord 2',
         },
+        {
+            måltid: 'Taco',
+            pris: 100,
+            notWanted: [/*ikke ønsket ingr*/],
+            kommentar: '',
+            waiter: 'Henrik',
+            table: 'Bord 1',
+        },
     ], 
 }

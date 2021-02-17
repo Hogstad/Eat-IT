@@ -99,7 +99,6 @@ function notWantedList(checky) {
     else {
        let index = model.notWanted.indexOf(checky.value);
        model.notWanted.splice(index, 1);
-        
     } 
 };
 // funksjoner for rediger knappen!

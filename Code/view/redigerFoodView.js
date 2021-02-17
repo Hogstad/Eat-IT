@@ -1,6 +1,5 @@
 function redigerFoodView(index) {
     selectedFood(index);
-    // selectedCategory(index)
     let html = "";
     html += `
             <div id="mainViewButtons">

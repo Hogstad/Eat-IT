@@ -68,28 +68,4 @@ function editFoodView(index) {
             `;
             
         divApp.innerHTML = html;
-        // selectedTable();
 };
-
-
-//Sette inn table for alle greiene i model.category[].retter[].ingredients 
-// Table med type på toppen "navn"
-// Så pushe inn alle ingr.
-// Så legge til en checkbox på siden.
-
-/*      <tr>
-<td>Kjøttdeig</td>
-<td><input type="checkbox"></td>
-</tr>
-<tr>
-<td>Tacolefse</td>
-<td><input type="checkbox"></td>
-</tr>
-<tr>
-<td>Tacokrydder</td>
-<td><input type="checkbox"></td>
-</tr>
-<tr>
-<td>NASA material</td>
-<td><input type="checkbox"></td>
-</tr> */
