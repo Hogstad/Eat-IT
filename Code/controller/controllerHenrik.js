@@ -140,6 +140,7 @@ function dishDelivery(i, j) {
     model.completeOrder.push(model.order[model.selectedWaitor][i][j]);
     model.completeOrder[model.completeOrder.length -1].waiter = model.waitor.names[model.selectedWaitor].name;
     model.completeOrder[model.completeOrder.length -1].table = model.tables.names[i].name;
+    delete model.completeOrder[model.completeOrder.length -1].finnished;
     model.order[model.selectedWaitor][i].splice(j, 1);
     orderViewWaiter();
 }
