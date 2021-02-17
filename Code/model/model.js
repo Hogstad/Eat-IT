@@ -139,12 +139,14 @@ const model = {
                         pris: 100,
                         notWanted: ["kjøttdeig"],
                         kommentar: 'Vegetar rett',
+                        finnished: false,
                     },
                     {
                         måltid: 'Melk',
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
+                        finnished: false,
                     },
                 ],
                 //Bord 1
@@ -154,6 +156,7 @@ const model = {
                         pris: 100,
                         notWanted: [/*"gluten", "laktose"*/],
                         kommentar: '',
+                        finnished: false,
                     }
                 ],
                 //Bord 2
@@ -163,6 +166,7 @@ const model = {
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
+                        finnished: false,
                     }
                 ],
 
@@ -173,6 +177,7 @@ const model = {
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
+                        finnished: false,
                     }
                 ],
             ],
@@ -185,6 +190,7 @@ const model = {
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
+                        finnished: false,
                     }
                 ],
                 //Bord 1
@@ -194,6 +200,7 @@ const model = {
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
+                        finnished: false,
                     }
                 ],
                 //Bord 2
@@ -203,6 +210,7 @@ const model = {
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
+                        finnished: false,
                     }
                 ],
                 //Bord 3
@@ -212,6 +220,7 @@ const model = {
                         pris: 100,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
+                        finnished: false,
                     }
                 ],
             ],
