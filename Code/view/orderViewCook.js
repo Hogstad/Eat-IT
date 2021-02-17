@@ -22,6 +22,7 @@ function orderViewCook() {
             </select>
                 <button onclick="mainView()">Home</button>
                 <button onclick="orderViewWaiter()">Ordre</button>
+                <button onclick="CompleteorderViewCook()">Ferdig Ordre</button>
             </div> 
             `;
             html += `
@@ -52,7 +53,8 @@ function orderViewCook() {
                             html += `
                                 ${model.order[servitør][bord][måltid].kommentar}
                                 </td>
-                                <td><input ${model.order[servitør][bord][måltid].finnished ? "checked": ""} type="checkbox" onchange="cookFinnishedDish(${servitør}, ${bord}, ${måltid})"></td>
+                                <td><input
+                                 ${model.order[servitør][bord][måltid].finnished ? "checked": ""} type="checkbox" onchange="cookFinnishedDish(${servitør}, ${bord}, ${måltid})"></td>
                             </tr> 
                             `;  
                     };  

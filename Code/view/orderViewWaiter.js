@@ -24,6 +24,7 @@ function orderViewWaiter(index) {
             </select>
                 <button onclick="mainView()">Home</button>
                 <button onclick="orderViewWaiter()">Ordre</button>
+                <button onclick="CompleteorderViewWaiter()">Ferdig Ordre</button>
             </div> 
             `;
             html += `
