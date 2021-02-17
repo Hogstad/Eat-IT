@@ -22,7 +22,7 @@ function orderViewCook() {
             </select>
                 <button onclick="mainView()">Home</button>
                 <button onclick="orderViewWaiter()">Ordre</button>
-                <button onclick="CompleteorderViewCook()">Ferdig Ordre</button>
+                <button onclick="completeOrderViewCook()">Ferdig Ordre</button>
             </div> 
             `;
             html += `
