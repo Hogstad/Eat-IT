@@ -32,6 +32,18 @@ function saveNewRetter() {
     printCategory(model.selectedCategory);
     mainView();
 }
+function saveRetterButton() {
+    let name = document.getElementById('kategoriName')
+    let ingr = document.getElementById('kategoriNameTwo')
+    let price = document.getElementById('kategoriPrice')
+    let button = document.getElementById('saveNewRetterButton')
+    if (name.value === "" || ingr.value === "" || price.value === "") {
+        button.disabled = true;
+    }
+    else {
+        button.disabled = false;
+    }
+}
 //Inputtext functions.
 function getDataCategory(inputText) {
     addCategory = inputText;
@@ -39,6 +51,7 @@ function getDataCategory(inputText) {
 
 function getDataCategoryTwo(inputTextCategory) {
     model.addRetter = inputTextCategory;
+    saveRetterButton();
 }
 
 function getDataCategoryThree(inputTextCategory) {
@@ -49,10 +62,12 @@ function getDataCategoryThree(inputTextCategory) {
         liste.push(x);
     }
     model.addIngredients = liste;
+    saveRetterButton();
 }
 
 function getDataCategoryPrice(inputTextCategory) {
     model.addPris = inputTextCategory;
+    saveRetterButton();
 }
 //Hjelpefunction for å velge servitør/category/table.
 function selectedCategory(num) {
@@ -121,17 +136,25 @@ function redigerRettHjelp(checky) {
 };
 // funksjon for å legge til i redigerFoodView.
 function redigerRettLeggTil() {
-    if (model.leggTilRediger == '') {
-       return;
-    }
     let x = {name: model.leggTilRediger};
     model.category[model.selectedCategory].retter[model.selectedFood].ingredients.push(x);
-    model.leggTilRediger = "";
     redigerFoodView(model.selectedFood);
+}
+// Funksjon for å legg til knappen i redigerFoodView.
+function redigerRettLeggTilButton() {
+    let inputs = document.getElementById('redigerInput');
+    let button = document.getElementById('leggTilRediger');
+    if (inputs.value === '') {
+        button.disabled = true;
+    }
+    else {
+        button.disabled = false;
+    }
 }
 
 function getDataLeggTilRediger(inputText) {
     model.leggTilRediger = inputText;
+    redigerRettLeggTilButton();
 }
 // Funksjon som skal la kokken velge at maten er klar.
 function cookFinnishedDish(servitør, bord, måltid) {
@@ -152,6 +175,7 @@ function slettRett() {
     model.category[model.selectedCategory].retter.splice(model.selectedFood, 1);
     printCategory(model.selectedCategory);
 }
+<<<<<<< Updated upstream
 
 function newTable() {
     let x = {
@@ -186,3 +210,12 @@ function GetSelectedValue(select) {
         addTableView()
     }
 }
+=======
+// Funksjon som skal slette kategorier!
+function slettKategori(index) {
+    console.log(index);
+    model.category.splice(index, 1);
+    model.showDishes = "";
+    mainView();
+}
+>>>>>>> Stashed changes
