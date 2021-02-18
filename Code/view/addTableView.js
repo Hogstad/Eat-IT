@@ -1,4 +1,4 @@
-function addCategoryView() {
+function addTableView() {
     let html = "";
     html += `
             <div id="mainViewButtons">
@@ -27,18 +27,16 @@ function addCategoryView() {
             `;
             html += `
             <div id="mainViewShowDishes"></div>
-            <div id="addCategoryPoppUp">
-                <h3>Ny kategori</h3>
+            <div id="addUserPoppUp">
+                <h3>Nytt Bord</h3>
                 <br>
-            <form id="addCategoryPoppUpText">
-                <label for="kname">Navn på kategori: </label>
-                <input type="text" id="kategoriName" name="kname" oninput="getDataCategory(this.value)">
             </form>
                 <br>
                 <br>
                 <br>
-            <button onclick="saveNewCategory()">Legg til</button
+            <button onclick="newTable()">Legg til nytt bord</button
             </div>
             `;
         divApp.innerHTML = html;
 };
+

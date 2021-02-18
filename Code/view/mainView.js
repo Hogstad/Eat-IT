@@ -6,7 +6,11 @@ function mainView() {
             `;
             html += createWaitorOptions();
             html +=`
-                <button onclick="addUserView()">Legg til ny bruker</button>
+            <select id="select" onchange=GetSelectedValue(this) name="Legg til">
+                <option>Legg til</option>
+                <option value="1">Legg til ny Bruker</option>
+                <option value="2">Legg til nytt Bord</option>
+            </select>
                 <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
                 `;

@@ -152,3 +152,37 @@ function slettRett() {
     model.category[model.selectedCategory].retter.splice(model.selectedFood, 1);
     printCategory(model.selectedCategory);
 }
+
+function newTable() {
+    let x = {
+        name: newTableName(),
+    };
+    model.tables.names.push(x);
+}
+
+function newTableName() {
+    for (let i = 1; i <= model.tables.names.length +1; i++) {
+        if (newTableNameHelper(i)) {
+            return 'Bord '+i;
+        }
+    }
+}
+
+function newTableNameHelper(i) {
+    for (let j = 0; j < model.tables.names.length; j++) {
+        let num = model.tables.names[j].name.substring(4)
+        if (num == i) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function GetSelectedValue(select) {
+    if (select.value == 1) {
+        addUserView()
+    }
+    if (select.value == 2) {
+        addTableView()
+    }
+}
