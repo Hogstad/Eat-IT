@@ -175,7 +175,6 @@ function slettRett() {
     model.category[model.selectedCategory].retter.splice(model.selectedFood, 1);
     printCategory(model.selectedCategory);
 }
-<<<<<<< Updated upstream
 
 function newTable() {
     let x = {
@@ -210,7 +209,6 @@ function GetSelectedValue(select) {
         addTableView()
     }
 }
-=======
 // Funksjon som skal slette kategorier!
 function slettKategori(index) {
     console.log(index);
@@ -218,4 +216,3 @@ function slettKategori(index) {
     model.showDishes = "";
     mainView();
 }
->>>>>>> Stashed changes
