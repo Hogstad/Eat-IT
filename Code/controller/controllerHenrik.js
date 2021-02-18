@@ -121,8 +121,12 @@ function redigerRettHjelp(checky) {
 };
 // funksjon for å legge til i redigerFoodView.
 function redigerRettLeggTil() {
+    if (model.leggTilRediger == '') {
+       return;
+    }
     let x = {name: model.leggTilRediger};
     model.category[model.selectedCategory].retter[model.selectedFood].ingredients.push(x);
+    model.leggTilRediger = "";
     redigerFoodView(model.selectedFood);
 }
 
@@ -142,4 +146,9 @@ function dishDelivery(i, j) {
     delete model.completeOrder[model.completeOrder.length -1].finnished;
     model.order[model.selectedWaitor][i].splice(j, 1);
     orderViewWaiter();
+}
+// Funksjon til slette rett knapp!
+function slettRett() {
+    model.category[model.selectedCategory].retter.splice(model.selectedFood, 1);
+    printCategory(model.selectedCategory);
 }
