@@ -34,6 +34,21 @@ function addTableView() {
                 <br>
                 <br>
                 <br>
+                <select onchange="selectedTables(this.value)"> `;
+                    for(let i = 0; i <model.tables.names.length; i++) {
+                        if (i == model.selectedTable) {
+                            html += `
+                            <option selected value="${i}">${model.tables.names[i].name}</option>
+                            `;
+                        }
+                        else {
+                            html += `
+                            <option value="${i}">${model.tables.names[i].name}</option>
+                            `;
+                        }
+                    }
+                    html += `
+                </select>
             <button onclick="newTable()">Legg til nytt bord</button
             </div>
             `;

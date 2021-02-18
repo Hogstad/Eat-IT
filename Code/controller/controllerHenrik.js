@@ -129,7 +129,7 @@ function bestilling() {
             finnished: false,
         }
         model.order[model.selectedWaitor][model.selectedTable].push(x);
-        orderViewWaiter();
+        orderViewWaiter(model.selectedTable);
 }
 function notWantedList(checky) {
     if (checky.checked) {
@@ -212,6 +212,7 @@ function newTable() {
         name: newTableName(),
     };
     model.tables.names.push(x);
+    addTableView()
 }
 
 function newTableName() {
@@ -245,4 +246,42 @@ function slettKategori(index) {
     model.category.splice(index, 1);
     model.showDishes = "";
     mainView();
+}
+
+// local Storage funksjoner
+
+function saveToLocalStorage() {
+    let waitorZip = JSON.stringify(model.waitor);
+    let tablesZip = JSON.stringify(model.tables);
+    let categoryZip = JSON.stringify(model.category);
+    let orderZip = JSON.stringify(model.order);
+    let completeOrderZip = JSON.stringify(model.completeOrder);
+
+    localStorage.setItem("waitor", waitorZip);
+    localStorage.setItem("tables", tablesZip);
+    localStorage.setItem("category", categoryZip);
+    localStorage.setItem("order", orderZip);
+    localStorage.setItem("completeOrder", completeOrderZip);
+}
+function getFromLocalStorage() {
+    if (localStorage.getItem("waitor") !== null) {
+        waitorUnzip = JSON.parse(localStorage.getItem("waitor"));
+        tablesUnzip = JSON.parse(localStorage.getItem("tables"));
+        categoryUnzip = JSON.parse(localStorage.getItem("category"));
+        orderUnzip = JSON.parse(localStorage.getItem("order"));
+        completeOrderUnzip = JSON.parse(localStorage.getItem("completeOrder"));
+
+        model.waitor = waitorUnzip;
+        model.tables = tablesUnzip;
+        model.category = categoryUnzip;
+        model.order = orderUnzip;
+        model.completeOrder = completeOrderUnzip;
+    }
+}
+
+window.onbeforeunload = function() {
+    saveToLocalStorage();
+}
+window.onload = function() {
+    getFromLocalStorage();
 }
