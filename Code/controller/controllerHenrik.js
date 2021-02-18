@@ -152,3 +152,10 @@ function slettRett() {
     model.category[model.selectedCategory].retter.splice(model.selectedFood, 1);
     printCategory(model.selectedCategory);
 }
+// Funksjon som skal slette kategorier!
+function slettKategori(index) {
+    console.log(index);
+    model.category.splice(index, 1);
+    model.showDishes = "";
+    mainView();
+}
