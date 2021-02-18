@@ -12,6 +12,17 @@ function saveNewWaitor() {
     model.order.push(y);
     mainView();
 }
+// Funksjon for disable knapp på legg til ny servitør!
+function saveNewWaitorButton() {
+    let name = document.getElementById('fname')
+    let button = document.getElementById('saveNewWaitorButton')
+        if (name.value === "") {
+            button.disabled = true;
+        }
+        else {
+            button.disabled = false;
+        }
+}
 //Function for å lagre ny Category i modellen.
 function saveNewCategory() {
     let x = {
@@ -20,6 +31,17 @@ function saveNewCategory() {
     }
     model.category.push(x);
     mainView();
+}
+// Funksjon som skal disable legg til knapp!
+function saveNewCategoryButton () {
+    let name = document.getElementById('kategoriNameX')
+    let button = document.getElementById('addCategoryButton')
+        if (name.value === "") {
+            button.disabled = true;
+        }
+        else {
+            button.disabled = false;
+        }
 }
 //Function for å lagre ny retter innen for category i mordellen.
 function saveNewRetter() {
@@ -47,6 +69,7 @@ function saveRetterButton() {
 //Inputtext functions.
 function getDataCategory(inputText) {
     addCategory = inputText;
+    saveNewCategoryButton();
 }
 
 function getDataCategoryTwo(inputTextCategory) {
@@ -90,6 +113,7 @@ function selectedFood(num) {
 }
 function getDataWaitor(inputText) {
     addWaitor = inputText;
+    saveNewWaitorButton();
 }
 function getDataKommentar(text) {
     model.kommentar = text;
@@ -116,7 +140,7 @@ function notWantedList(checky) {
        model.notWanted.splice(index, 1);
     } 
 };
-// funksjoner for rediger knappen!
+// funksjoner for slette valgt knappen!
 function redigerRett() {
     for (let i = 0; i < model.redigerListe.length; i++) {
         model.category[model.selectedCategory].retter[model.selectedFood].ingredients.splice(model.redigerListe[0], 1);
@@ -124,7 +148,7 @@ function redigerRett() {
     model.redigerListe = [];
     redigerFoodView(model.selectedFood);
 }
-
+// Funksjon for å gjøre slette valgt knappen disabled med mer!
 function redigerRettHjelp(checky) {
     if (checky.checked) {
         model.redigerListe.push(checky.value);
@@ -133,6 +157,13 @@ function redigerRettHjelp(checky) {
        let index = model.redigerListe.indexOf(checky.value);
        model.redigerListe.splice(index, 1);
     } 
+    if (model.redigerListe.length > 0) {
+        console.log(document.getElementById('sletteValgtButton').disabled = false);
+    }
+    else {
+        document.getElementById('sletteValgtButton').disabled = true;
+    }
+    
 };
 // funksjon for å legge til i redigerFoodView.
 function redigerRettLeggTil() {
@@ -211,7 +242,6 @@ function GetSelectedValue(select) {
 }
 // Funksjon som skal slette kategorier!
 function slettKategori(index) {
-    console.log(index);
     model.category.splice(index, 1);
     model.showDishes = "";
     mainView();

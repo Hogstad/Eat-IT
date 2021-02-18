@@ -37,7 +37,7 @@ function addUserView() {
                 <br>
                 <br>
                 <br>
-            <button onclick="saveNewWaitor()">Legg til</button
+            <button id="saveNewWaitorButton" disabled onclick="saveNewWaitor()">Legg til</button
             </div>
             `;
         divApp.innerHTML = html;

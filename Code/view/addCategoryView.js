@@ -32,12 +32,12 @@ function addCategoryView() {
                 <br>
             <form id="addCategoryPoppUpText">
                 <label for="kname">Navn på kategori: </label>
-                <input type="text" id="kategoriName" name="kname" oninput="getDataCategory(this.value)">
+                <input type="text" id="kategoriNameX" name="kname" oninput="getDataCategory(this.value)">
             </form>
                 <br>
                 <br>
                 <br>
-            <button onclick="saveNewCategory()">Legg til</button
+            <button id="addCategoryButton" disabled onclick="saveNewCategory()">Legg til</button
             </div>
             `;
         divApp.innerHTML = html;

@@ -51,10 +51,10 @@ function redigerFoodView(index) {
                 </table>
                     <br>
                     <br>
-                    <input id="redigerInput" style="width: 235px;" type="text" placeholder="Rediger" oninput="getDataLeggTilRediger(this.value)"></input>
+                    <input id="redigerInput" style="width: 235px;" type="text" placeholder="Legg til ingrediens" oninput="getDataLeggTilRediger(this.value)"></input>
                     <button style="position: relative; top: 25px; left: -129px;" onclick="slettRett()">Slett ${model.category[model.selectedCategory].retter[model.selectedFood].navn}</button>
                     <button id="leggTilRediger" disabled style="position: relative; top: 25px; left: -129px;" onclick="redigerRettLeggTil()">Legg til</button>
-                    <button style="position: relative; top: 25px; left: -129px;" onclick="redigerRett()">Rediger</button>
+                    <button id="sletteValgtButton" disabled style="position: relative; top: 25px; left: -129px;" onclick="redigerRett()">Slett valgt</button>
             </div>  
             `;
             
