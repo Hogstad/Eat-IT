@@ -279,9 +279,9 @@ function getFromLocalStorage() {
     }
 }
 
-window.onbeforeunload = function() {
-    saveToLocalStorage();
-}
-window.onload = function() {
-    getFromLocalStorage();
-}
+// window.onbeforeunload = function() {
+//     saveToLocalStorage();
+// }
+// window.onload = function() {
+//     getFromLocalStorage();
+// }
