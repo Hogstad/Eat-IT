@@ -1,12 +1,83 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: #EAFFD0; */
+    background-color: #EAFFD0;
 }
 
 #app {
-    width: 840px;
-    height: 1344px;
-    background-image: url(./img/ipad.png);
-    background-color: grey;
+    position: absolute;
+    border: solid 4px black;
+    border-style: inset;
+    border-radius: 8%;
+    width: 40%;
+    height: 80%; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* øverste meny */
+#mainViewButtons {
+    position: relative;
+    border: solid 1px black;
+    border-radius: 8px;
+    height: 5%;
+    width: 40%;
+    top: 2%;
+    left: 30%;
+    text-align: center;
+    padding-top: 2.2%;
+    background-color: #43C59D;
+}
+/* kategori på siden */
+#oneDiv {
+    position: relative;
+    border: solid 1px black;
+    width: 12%; 
+    height: auto;
+    border-radius: 8px;
+    text-align: center;
+    top: 2%;
+    left: 2%;
+    background-color: #43C59D;
+}
+#oneDiv button {
+    width: 80%;
+    padding: 2%;
+    margin: 2%;
+}
+
+#mainViewShowDishes {
+    position: relative;
+    border-radius: 8px;
+    width: 70%;
+    height: auto;
+    left: 20%;
+    top: -10%;
+
+}
+
+#addFoodViewButton {
+    position: relative;
+    top: -9%;
+    left: 1%;
+}
+
+.dishDiv {
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 1%;
+    background-color: #43C59D;
+    height: 20%;
+}
+
+#prisCss {
+    position: relative;
+    left: 80%;
+    
+}
+
+.dishDiv button {
+    position: relative;
+    top: 55px;
+    left: 1%;
 }
