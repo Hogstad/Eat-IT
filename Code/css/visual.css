@@ -1,7 +1,12 @@
-.app {
-    padding: 0;
+body {
     margin: 0;
+    padding: 0;
+}
+#app {
+    position: absolute;
     user-select: none;
+    background-color: green;
+    justify-content: center;
 }
 
 #mainViewShowDishes {
@@ -261,4 +266,8 @@
     clear: left;
     margin: 10px;
     user-select: none;
+}
+
+.red1 {
+    background-color: red;
 }

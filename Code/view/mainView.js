@@ -2,7 +2,7 @@ mainView();
 function mainView() {
     let html = "";
     html += `
-            <div id="mainViewButtons">
+            <div class="red1" id="mainViewButtons">
             `;
             html += createWaitorOptions();
             html +=`
@@ -27,7 +27,7 @@ function mainView() {
             </div>
             `;
             html += `
-            <div id="mainViewShowDishes">${model.showDishes}</div>
+            <div class="red1" id="mainViewShowDishes">${model.showDishes}</div>
             `;
         divApp.innerHTML = html;
 };
