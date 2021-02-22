@@ -1,7 +1,7 @@
 function orderViewCook() {
     let html = "";
     html += `
-            <div id="mainViewButtons">
+            <div class="lengerMeny">
             <select onchange="selectedWaitor(this.value)"> `;
             html += `
             <option selected value="Kokk">Kokk</option>
@@ -20,9 +20,9 @@ function orderViewCook() {
             }
             html += `
             </select>
-                <button onclick="mainView()">Home</button>
-                <button onclick="orderViewWaiter()">Ordre</button>
-                <button onclick="completeOrderViewCook()">Ferdig Ordre</button>
+                <button class="ordreButton" onclick="mainView()">Home</button>
+                <button class="ordreButton" onclick="orderViewWaiter()">Ordre</button>
+                <button class="ferdigButton" onclick="completeOrderViewCook()">Ferdig ordre</button>
             </div> 
             `;
             html += `

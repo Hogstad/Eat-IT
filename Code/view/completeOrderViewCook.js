@@ -20,8 +20,8 @@ function completeOrderViewCook() {
             }
             html += `
             </select>
-                <button onclick="mainView()">Home</button>
-                <button onclick="orderViewWaiter()">Ordre</button>
+                <button class="ordreButton" onclick="mainView()">Home</button>
+                <button class="ordreButton" onclick="orderViewWaiter()">Ordre</button>
             </div> 
             `;
             html += '<table>';

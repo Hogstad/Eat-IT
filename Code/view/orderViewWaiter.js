@@ -2,7 +2,7 @@ function orderViewWaiter(index) {
     selectedTable(index)
     let html = "";
     html += `
-            <div id="mainViewButtons">
+            <div class="lengerMeny">
             <select onchange="selectedWaitor(this.value); orderViewWaiter();"> `;
             html += `
             <option value="Kokk">Kokk</option>
@@ -21,9 +21,9 @@ function orderViewWaiter(index) {
             }
             html += `
             </select>
-                <button onclick="mainView()">Home</button>
-                <button onclick="orderViewWaiter()">Ordre</button>
-                <button onclick="completeOrderViewWaitor()">Ferdig Ordre</button>
+                <button class="ordreButton" onclick="mainView()">Home</button>
+                <button class="ordreButton" onclick="orderViewWaiter()">Ordre</button>
+                <button class="ferdigButton" onclick="completeOrderViewWaitor()">Ferdig Ordre</button>
             </div> 
             `;
             html += `

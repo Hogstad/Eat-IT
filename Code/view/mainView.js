@@ -11,7 +11,7 @@ function mainView() {
                 <option value="1">Legg til ny Bruker</option>
                 <option value="2">Legg til nytt Bord</option>
             </select>
-                <button onclick="orderViewWaiter()">Ordre</button>
+                <button class="ordreButton" onclick="orderViewWaiter()">Ordre</button>
             </div> 
                 `;
                 html += `
@@ -55,7 +55,7 @@ function printCategory(index) {
                 <button class="coloredButtons" onclick="redigerFoodView(${i})">Rediger</button>
                 <button class="coloredButtons" onclick="editFoodView(${i})">Bestill</button>
             </div>
-                <div class="prisCss">Pris: ${model.category[index].retter[i].pris}</div>
+                <div class="prisCss">Pris: ${model.category[index].retter[i].pris},-</div>
             </div>
         `;
     }

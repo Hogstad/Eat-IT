@@ -10,7 +10,7 @@ function addUserView() {
                 <option value="1">Legg til ny Bruker</option>
                 <option value="2">Legg til nytt Bord</option>
             </select>
-                <button onclick="orderViewWaiter()">Ordre</button>
+                <button class="ordreButton" onclick="orderViewWaiter()">Ordre</button>
             </div> 
                 `;
                 html += `

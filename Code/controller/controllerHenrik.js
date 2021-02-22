@@ -47,7 +47,7 @@ function saveNewCategoryButton () {
 function saveNewRetter() {
     let x = {
         navn: model.addRetter,
-        pris: model.addPris + ",-",
+        pris: model.addPris,
         ingredients: model.addIngredients,
     }
     model.category[model.selectedCategory].retter.push(x);

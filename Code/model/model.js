@@ -40,7 +40,7 @@ const model = {
             retter: [
                 {
                     navn: 'Taco',
-                    pris: 100 + ',-',
+                    pris: 100,
                     ingredients: [
                         {name: 'Kjøttdeig'},
                         {name: 'Tacokrydder'},
@@ -55,7 +55,7 @@ const model = {
                 },
                 {
                     navn: 'Fersk vårruller med kylling',
-                    pris: 100 + ',-',
+                    pris: 100,
                     ingredients: [
                         {name: 'Kyllingfilet'},
                         {name: 'Gulrot'},
@@ -88,8 +88,6 @@ const model = {
                         {name: 'Hjertesalat'},
                         {name: 'Tortillachips'},
                         {name: 'Vårløk'},
-                        {name: 'Jalapeñog'},
-                        {name: 'Frisk koriander'},
                     ],
                 },
             ],
@@ -108,7 +106,7 @@ const model = {
             ],
         },
         {
-            type: 'Drinks',
+            type: 'Drikke',
             retter: [
                 {
                     navn: 'Melk',
