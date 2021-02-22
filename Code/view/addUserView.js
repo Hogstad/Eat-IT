@@ -27,7 +27,7 @@ function addUserView() {
             `;
             html += `
             <div id="mainViewShowDishes"></div>
-            <div id="addUserPoppUp">
+            <div id="addUserPoppUp" class="leggTilKnapper">
                 <h3>Ny servitør</h3>
                 <br>
             <form id="addUserPoppUpText">

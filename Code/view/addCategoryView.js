@@ -27,7 +27,7 @@ function addCategoryView() {
             `;
             html += `
             <div id="mainViewShowDishes"></div>
-            <div id="addCategoryPoppUp">
+            <div id="addCategoryPoppUp" class="leggTilKnapper">
                 <h3>Ny kategori</h3>
                 <br>
             <form id="addCategoryPoppUpText">

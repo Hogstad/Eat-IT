@@ -1,3 +1,7 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
@@ -32,18 +36,19 @@ body {
 #oneDiv {
     position: relative;
     border: solid 1px black;
-    width: 12%; 
+    width: 17%; 
     height: auto;
     border-radius: 8px;
     text-align: center;
-    top: 2%;
+    top: 10.5%;
     left: 2%;
     background-color: #43C59D;
 }
 #oneDiv button {
     width: 80%;
+    height: 40px;
     padding: 2%;
-    margin: 2%;
+    margin: 4%;
 }
 
 #mainViewShowDishes {
@@ -51,8 +56,8 @@ body {
     border-radius: 8px;
     width: 70%;
     height: auto;
-    left: 20%;
-    top: -10%;
+    left: 22%;
+    top: -28.3%;
 
 }
 
@@ -60,6 +65,8 @@ body {
     position: relative;
     top: -9%;
     left: 1%;
+    height: 30px;
+    width: 110px;
 }
 /* Grid til å vise rettene våres */
 .dishDiv {
@@ -89,8 +96,10 @@ body {
 
  .dishDiv button {
     position: relative;
-    bottom: -2px;
+    bottom: 7px;
     left: 1%;
+    height: 40px;
+    width: 80px;
 } 
 
 .knapper {
@@ -110,6 +119,38 @@ body {
       display: none;
 }
 
-/* Grid for legg til knappene våres */ 
+/* CSS for alle legg til knappene våres */ 
 
+.leggTilKnapper {
+    position: relative;
+    background-color: #43C59D;
+    border: solid 1px black;
+    border-radius: 8px;
+    width: 40%;
+    height: auto;
+    left: 22.6%;
+    top: -23.6%;
 
+}
+
+.leggTilKnapper button {
+    position: relative;
+    height: 40px;
+    width: 80px;
+    bottom: 4px;
+    margin-left: 7px;
+}
+
+ .leggTilKnapper label {
+    position: absolute;
+    left: 0;
+    line-height: 25px;
+    
+} 
+
+.leggTilKnapper input {
+    position: relative;
+    left: 35%;
+    line-height: 25px;
+    
+} 

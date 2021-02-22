@@ -27,7 +27,7 @@ function addFoodView() {
             `;
             html += `
             <div id="mainViewShowDishes"></div>
-            <div id="addCategoryFood">
+            <div id="addCategoryFood" class="leggTilKnapper">
                 <h2>Legg til matrett og ingredienser</h2>
                 <br>
             <form id="addCategoryFoodPoppUpText">
@@ -42,6 +42,7 @@ function addFoodView() {
                 <label for="foodPrice">Pris på rett: </label>
                 <input type="text" id="kategoriPrice" name="foodPrice" oninput="getDataCategoryPrice(this.value)">
             </form>
+            <br>
             <button id="saveNewRetterButton" disabled onclick="saveNewRetter()">Legg til</button
             </div>
             `;

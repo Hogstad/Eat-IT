@@ -27,7 +27,7 @@ function addTableView() {
             `;
             html += `
             <div id="mainViewShowDishes"></div>
-            <div id="addUserPoppUp">
+            <div id="addUserPoppUp" class="leggTilKnapper">
                 <h3>Nytt Bord</h3>
                 <br>
             </form>
