@@ -61,23 +61,55 @@ body {
     top: -9%;
     left: 1%;
 }
-
+/* Grid til å vise rettene våres */
 .dishDiv {
     border: solid 1px black;
     border-radius: 8px;
     margin: 1%;
     background-color: #43C59D;
-    height: 20%;
+    height: 160px;
+    overflow: hidden;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr ;
+    grid-template-areas:'header header'
+                        'innhold innhold'
+                        'knapper pris';
+
 }
 
-#prisCss {
+.prisCss {
     position: relative;
-    left: 80%;
+    grid-area: pris;
+    right: 10%;
+    text-align: right;
     
 }
 
-.dishDiv button {
+ .dishDiv button {
     position: relative;
-    top: 55px;
+    bottom: -2px;
     left: 1%;
+} 
+
+.knapper {
+    grid-area: knapper;
+    padding: 5px;
 }
+
+.innhold {
+    grid-area: innhold;
+}
+
+.header {
+    grid-area: header;
+}
+
+#mainViewShowDishes::-webkit-scrollbar {
+      display: none;
+}
+
+/* Grid for legg til knappene våres */ 
+
+

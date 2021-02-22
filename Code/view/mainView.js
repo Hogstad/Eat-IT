@@ -41,8 +41,8 @@ function printCategory(index) {
     for (let i = 0; i < model.category[index].retter.length; i++) {
         html += `
             <div class="dishDiv">
-                <h2>${model.category[index].retter[i].navn}</h2>
-                <h4>
+                <h2 class="header">${model.category[index].retter[i].navn}</h2>
+                <h4 class="innhold">
         `;    
         for (let j = 0; j < model.category[index].retter[i].ingredients.length; j++) {
             html += `
@@ -51,9 +51,11 @@ function printCategory(index) {
         }
         html += `
             </h4>
+            <div class="knapper">
                 <button class="coloredButtons" onclick="redigerFoodView(${i})">Rediger</button>
                 <button class="coloredButtons" onclick="editFoodView(${i})">Bestill</button>
-                <h3 id="prisCss">Pris: ${model.category[index].retter[i].pris}</h3>
+            </div>
+                <div class="prisCss">Pris: ${model.category[index].retter[i].pris}</div>
             </div>
         `;
     }
