@@ -26,7 +26,7 @@ function orderViewCook() {
             </div> 
             `;
             html += `
-                <table id="orderViewWaiterCss"style="width: 50%">
+                <table id="orderViewWaiterCss"style="width: 90%">
                 `;
             for (let servitør = 0; servitør < model.order.length; servitør++) {
                 html += `

@@ -60,7 +60,7 @@ select {
     height: 7%;
     width: 50%;
     top: 2%;
-    left: 30%;
+    left: 25%;
     text-align: center;
     padding-top: 1.6%;
     background-color: #43C59D;
@@ -199,6 +199,120 @@ select {
     bottom: 4px;
     margin: 15px;
 }
+/* css for rediger view  */ 
 
+#editFoodViewCss {
+    position: relative;
+    left: 23.5%;
+    top: -28%;
+}
 
+#editFoodViewCss table {
+    position: relative;
+    margin-top: 5px;
+}
 
+#editFoodViewCss tr {
+    position: relative;
+    border: solid 1px black;
+    user-select: none;
+}
+
+#editFoodViewCss td {
+    position: relative;
+    border: solid 1px black;
+    text-align: center;
+    user-select: none;
+}
+
+#editFoodViewCss th {
+    position: relative;
+    border: solid 1px black;
+    text-align: center;
+    user-select: none;
+}
+
+#redigerInput {
+    position: relative;
+    clear: left;
+    width: 30%;
+    display: block;
+}
+
+.redigerKnapper {
+    position: relative;
+    width: 30%;
+    display: flex;
+    margin-top: 2px;
+}
+
+.redigerKnapper button {
+    display: block;
+    height: 30px;
+    width: 95px;
+    font-size: 14px;
+    padding: 0;
+    margin: 2px;
+}
+
+#visFremNavn {
+    width: 80px;
+    height: 25px;
+}
+/* css for bestill view */ 
+
+.tabellCss {
+    position: relative;
+    width: 30%;
+}
+
+.sendInnBestill {
+    position: relative;
+    top: 20%;
+    left: 20.2%;
+    margin-top: 2px;
+    height: 30px;
+    width: 90px;
+}
+
+#bordCss {
+    width: 80px;
+    height: 25px;
+}
+/* orderWaiterView table css */
+
+#orderViewWaiterCss {
+    position: relative;
+    top: 5%;
+    left: 4%;
+}
+
+#orderViewWaiterCss td {
+    position: relative;
+    border: solid 1px black;
+}
+
+#orderViewWaiterCss tr button {
+    position: relative;
+    left: 8%;
+}
+
+#orderViewWaiterCss tr {
+    position: relative;
+}
+
+#completeOrders {
+    position: relative;
+    top: 5%;
+    left: 4%;
+}
+
+#completeOrders td {
+    position: relative;
+    border: solid 1px black;
+}
+
+#completeOrders tr {
+    position: relative;
+    border: solid 1px black;
+}

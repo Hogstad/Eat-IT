@@ -64,10 +64,10 @@ function editFoodView(index) {
 
                     html += `
                 </table>
-                    <br>
-                    <br>
-                    <input style="width: 235px;" oninput="getDataKommentar(this.value)" type="text" placeholder="Kommentarer"></input>
-                    <button style="position: relative; top: 25px; left: -72px;" onclick="bestilling()">Send inn</button>
+                    <input class="tabellCss" oninput="getDataKommentar(this.value)" type="text" placeholder="Kommentarer"></input>
+                <div class="sendInnBestill">
+                    <button id="bestillKnapp" onclick="bestilling()">Send inn</button>
+                </div>
             </div>  
             `;
             

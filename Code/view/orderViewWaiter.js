@@ -27,13 +27,16 @@ function orderViewWaiter(index) {
             </div> 
             `;
             html += `
-                <table id="orderViewWaiterCss"style="width: 50%">
+                <table id="orderViewWaiterCss"style="width: 90%">
             `;
             for (let i = 0; i < model.order[model.selectedWaitor].length; i++) {
                 let totalPris = 0;
                 html += `
-                    <td><b>Bord: ${i + 1}</b></td>
-                    <td><b>${model.waitor.names[model.selectedWaitor].name}</b></td>
+                <tr>
+                    <td style="width: 200px;"><b>Bord: ${i + 1}</b></td>
+                    <td style="width: 300px;"><b>${model.waitor.names[model.selectedWaitor].name}</b></td>
+                    <td style="width: 60px; border: none;"></td>
+                </tr>
                 `;
                 for (let j = 0; j < model.order[model.selectedWaitor][i].length; j++){
                         totalPris += model.order[model.selectedWaitor][i][j].pris;
@@ -49,7 +52,7 @@ function orderViewWaiter(index) {
                         html += `
                         <b>${model.order[model.selectedWaitor][i][j].kommentar}<b>
                         </td>
-                        <td style="border: none;">${model.order[model.selectedWaitor][i][j].finnished ? '<button onclick="dishDelivery('+ i + ',' + j +')">Lever</button>' : ""}</td>
+                        <td style="width: 2px; border: none;">${model.order[model.selectedWaitor][i][j].finnished ? '<button onclick="dishDelivery('+ i + ',' + j +')">Lever</button>' : ""}</td>
                     </tr>
                     `;
                     
@@ -58,6 +61,10 @@ function orderViewWaiter(index) {
                     <tr>
                     <td style="border:none;"></td>
                     <td>Sum: ${totalPris},-</td>
+                    </tr>
+                    <tr>
+                    <td style="height: 20px; border: none;"></td>
+                    <td style="height: 20px; border: none;"></td>
                     </tr>
                 `;
             };
