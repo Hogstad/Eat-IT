@@ -71,7 +71,7 @@ const model = {
             type: 'Salat',
             retter: [
                 {
-                    navn: 'Gresk Salat',
+                    navn: 'Gresk',
                     pris: 139,
                     ingredients: [
                         {name: 'Tomat'},
@@ -86,7 +86,7 @@ const model = {
                     ],
                 },
                 {
-                    navn: 'Pastasalat',
+                    navn: 'Pasta',
                     pris: 139,
                     ingredients: [
                         {name: 'Fullkornspasta'},
@@ -104,7 +104,7 @@ const model = {
             type: 'Dessert',
             retter: [
                 {
-                    navn: 'Sjokoladefondant',
+                    navn: 'Fondant',
                     pris: 119,
                     ingredients: [
                         {name: 'Vaniljeis'},
