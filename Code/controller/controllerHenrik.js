@@ -89,7 +89,7 @@ function getDataCategoryThree(inputTextCategory) {
 }
 
 function getDataCategoryPrice(inputTextCategory) {
-    model.addPris = inputTextCategory;
+    model.addPris = parseInt(inputTextCategory);
     saveRetterButton();
 }
 //Hjelpefunction for å velge servitør/category/table.
