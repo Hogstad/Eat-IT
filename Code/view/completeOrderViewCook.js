@@ -24,7 +24,7 @@ function completeOrderViewCook() {
                 <button class="ordreButton" onclick="orderViewWaiter()">Ordre</button>
             </div> 
             `;
-            html += "<table id='completeOrdersCook' style='width: 90%'>";
+            html += "<div class='scrollBar'><table id='completeOrdersCook' style='width: 90%'>";
             for (let i = 0; i < model.waitor.names.length; i++) {
                 for (let j = 0; j < model.tables.names.length; j++) {
                     html += viewTableHelp('Bord '+(j+1), i);
@@ -33,6 +33,7 @@ function completeOrderViewCook() {
             }
         html += `
         </table>
+        </div>
         `;
     divApp.innerHTML = html
 };     

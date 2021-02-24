@@ -118,7 +118,7 @@ select {
     top: -9%;
     left: 1%;
     height: 30px;
-    width: 125px;
+    width: 140px;
 }
 /* Grid til å vise rettene våres */
 .dishDiv {
@@ -339,22 +339,27 @@ select {
     top: 30px;
     left: 5px;
 }
-/* complete order cook */
+/* complete order cook scrollbar*/
 #completeOrdersCook {
     position: relative;
     top: 5%;
     left: 4%;
+} 
+
+.scrollBar::-webkit-scrollbar {
+    display: none;
 }
 
-#completeOrdersCook td {
+.scrollBar {
     position: relative;
-    border: solid 1px black;
+    top: 5%;
+    left: 4%;
+    height: 600px;
+    width: 720px;
+    overflow: auto;
 }
 
-#completeOrdersCook tr {
-    position: relative;
-    border: solid 1px black;
-}
+
 /* complete order waitors */
 #completeOrdersCook td {
     position: relative;
