@@ -61,7 +61,7 @@ function orderViewCook() {
                 };
                 html += `
                                 <tr>
-                                    <td style="border:none;"></td>
+                                    <td style="border:none; height: 20px;"></td>
                                 </tr>
                                 `;
             };

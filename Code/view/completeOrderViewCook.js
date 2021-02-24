@@ -24,7 +24,7 @@ function completeOrderViewCook() {
                 <button class="ordreButton" onclick="orderViewWaiter()">Ordre</button>
             </div> 
             `;
-            html += "<table id='completeOrders'>";
+            html += "<table id='completeOrdersCook' style='width: 90%'>";
             for (let i = 0; i < model.waitor.names.length; i++) {
                 for (let j = 0; j < model.tables.names.length; j++) {
                     html += viewTableHelp('Bord '+(j+1), i);
@@ -38,10 +38,11 @@ function completeOrderViewCook() {
 };     
     function viewTableHelp(bord, index) {
         let html = `
+            <tr style="height: 20px;"></tr>
             <tr>
-                <td>${model.waitor.names[index].name}</td>
-                <td>${bord}</td>
-                <td></td>
+                <td style="width: 15%;">${model.waitor.names[index].name}</td>
+                <td style="width: 200px;">${bord}</td>
+                <td>Pris:</td>
             </tr>
         `;
         return html;
@@ -56,7 +57,7 @@ function completeOrderViewCook() {
                     <tr>
                         <td>${model.completeOrder[i].måltid}</td>
                         <td>${model.completeOrder[i].notWanted} ${model.completeOrder[i].kommentar}</td>
-                        <td>${model.completeOrder[i].pris}</td>
+                        <td style="width: 8%;">${model.completeOrder[i].pris},-</td>
                     </tr>
                     `;
             };

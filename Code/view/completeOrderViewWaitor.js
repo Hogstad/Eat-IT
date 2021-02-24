@@ -24,7 +24,7 @@ function completeOrderViewWaitor() {
                 <button onclick="orderViewWaiter()">Ordre</button>
             </div> 
             `;
-            html += '<table>';
+            html += "<table id='completeOrdersCook' style='width: 90%'>";
                 for (let j = 0; j < model.tables.names.length; j++) {
                     html += viewTableHelp('Bord '+(j+1), model.selectedWaitor);
                     html += viewInfoHelp('Bord '+(j+1), model.selectedWaitor);

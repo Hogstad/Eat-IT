@@ -191,7 +191,7 @@ select {
 
 #kategoriNameX {
     position: relative;
-    left: 15px;
+    left: 5px;
 }
 
 #addCategoryButton {
@@ -300,25 +300,37 @@ select {
 #orderViewWaiterCss tr {
     position: relative;
 }
-
-#completeOrders {
-    position: relative;
-    top: 5%;
-    left: 4%;
-}
-
-#completeOrders td {
-    position: relative;
-    border: solid 1px black;
-}
-
-#completeOrders tr {
-    position: relative;
-    border: solid 1px black;
-}
-
+/* legg til ny servitør */
 #fname {
     position: relative;
     top: 30px;
     left: 5px;
 }
+/* complete order cook */
+#completeOrdersCook {
+    position: relative;
+    top: 5%;
+    left: 4%;
+}
+
+#completeOrdersCook td {
+    position: relative;
+    border: solid 1px black;
+}
+
+#completeOrdersCook tr {
+    position: relative;
+    border: solid 1px black;
+}
+/* complete order waitors */
+#completeOrdersCook td {
+    position: relative;
+    border: solid 1px black;
+}
+
+#completeOrdersCook tr {
+    position: relative;
+    border: solid 1px black;
+}
+
+
