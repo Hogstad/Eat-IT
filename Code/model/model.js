@@ -40,7 +40,7 @@ const model = {
             retter: [
                 {
                     navn: 'Taco',
-                    pris: 100,
+                    pris: 129,
                     ingredients: [
                         {name: 'Kjøttdeig'},
                         {name: 'Tacokrydder'},
@@ -54,18 +54,15 @@ const model = {
                     ],
                 },
                 {
-                    navn: 'Fersk vårruller med kylling',
-                    pris: 100,
+                    navn: 'Burger',
+                    pris: 159,
                     ingredients: [
-                        {name: 'Kyllingfilet'},
-                        {name: 'Gulrot'},
-                        {name: 'Rød spisskål'},
-                        {name: 'Vårløk'},
-                        {name: 'Agurk'},
-                        {name: 'Hjertesalat'},
-                        {name: 'Koriander'},
-                        {name: 'Salt'},
-                        {name: 'Peppermiks'},
+                        {name: 'Pommes bistro'},
+                        {name: 'Bacon'},
+                        {name: 'Cheddar'},
+                        {name: 'Tomat'},
+                        {name: 'Løk'},
+                        {name: 'Avokado'},
                     ],
                 },  
             ],
@@ -74,20 +71,31 @@ const model = {
             type: 'Salat',
             retter: [
                 {
-                    navn: 'Taco Salat',
-                    pris: 100,
+                    navn: 'Gresk Salat',
+                    pris: 139,
                     ingredients: [
-                        {name: 'Karbonadedeig'},
-                        {name: 'Hvitløk'},
-                        {name: 'Olje'},
-                        {name: 'Tacokrydder'},
-                        {name: 'Vann'},
-                        {name: 'Røde bønner'},
+                        {name: 'Tomat'},
+                        {name: 'Cherrytomat'},
                         {name: 'Rødløk'},
-                        {name: 'Sitron'},
+                        {name: 'Agurk'},
+                        {name: 'Sorte oliven'},
+                        {name: 'Tørket oregano'},
                         {name: 'Hjertesalat'},
-                        {name: 'Tortillachips'},
-                        {name: 'Vårløk'},
+                        {name: 'Fetaost'},
+                        {name: 'Tzatziki'},
+                    ],
+                },
+                {
+                    navn: 'Pastasalat',
+                    pris: 139,
+                    ingredients: [
+                        {name: 'Fullkornspasta'},
+                        {name: 'Bacon'},
+                        {name: 'Brokkoli'},
+                        {name: 'Rødløk'},
+                        {name: 'Eple'},
+                        {name: 'Majones'},
+                        {name: 'Lettrømme'},
                     ],
                 },
             ],
@@ -96,23 +104,71 @@ const model = {
             type: 'Dessert',
             retter: [
                 {
-                    navn: 'Kake',
-                    pris: 100,
+                    navn: 'Sjokoladefondant',
+                    pris: 119,
                     ingredients: [
-                        {name: 'Kakemix'},
-                        
+                        {name: 'Vaniljeis'},
+                        {name: 'Friske bær'}, 
                     ],
                 },
+                {
+                    navn: 'Pavlova',
+                    pris: 119,
+                    ingredients: [
+                        {name: 'Vaniljekrem'},
+                        {name: 'Friske bær'},
+                    ],
+                },
+                // {
+                //     navn: 'Fruktsalat',
+                //     pris: 119,
+                //     ingredients: [
+                //         {name: 'Friske bær'},
+                //         {name: 'Vaniljekrem'},  
+                //     ],
+                // },
             ],
         },
         {
             type: 'Drikke',
             retter: [
                 {
-                    navn: 'Melk',
-                    pris: 100,
+                    navn: 'Mineralvann',
+                    pris: 37,
                     ingredients: [
-                        {name: 'Ku Melk'},
+                        {name: 'Coca-Cola'},
+                        {name: 'Pepsi Max'},
+                        {name: 'Sprite'},
+                        {name: 'Fanta'},
+                        {name: 'Eplemost'},
+                        
+                    ],
+                },
+                // {
+                //     navn: 'Vin på glass',
+                //     pris: 109,
+                //     ingredients: [
+                //         {name: 'Husets hvite'},
+                //         {name: 'Husets røde'},
+                        
+                //     ],
+                // },
+                // {
+                //     navn: 'Øl & Cider',
+                //     pris: 89,
+                //     ingredients: [
+                //         {name: 'Pilsner'},
+                //         {name: 'IPA'},
+                //         {name: 'Cider'},
+                        
+                //     ],
+                // },
+                {
+                    navn: 'Kaffe & te',
+                    pris: 34,
+                    ingredients: [
+                        {name: 'Kaffe'},
+                        {name: 'Te'},
                         
                     ],
                 },
@@ -134,24 +190,17 @@ const model = {
                     // Måltid
                     {
                         måltid: 'Taco',
-                        pris: 100,
+                        pris: 129,
                         notWanted: ["kjøttdeig"],
                         kommentar: 'Vegetar rett',
                         finnished: true,
-                    },
-                    {
-                        måltid: 'Melk',
-                        pris: 100,
-                        notWanted: [/*ikke ønsket ingr*/],
-                        kommentar: '',
-                        finnished: false,
                     },
                 ],
                 //Bord 1
                 [
                     {
                         måltid: 'Taco',
-                        pris: 100,
+                        pris: 129,
                         notWanted: [/*"gluten", "laktose"*/],
                         kommentar: '',
                         finnished: false,
@@ -161,7 +210,7 @@ const model = {
                 [
                     {
                         måltid: 'Taco',
-                        pris: 100,
+                        pris: 129,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                         finnished: false,
@@ -172,7 +221,7 @@ const model = {
                 [
                     {
                         måltid: 'Taco',
-                        pris: 100,
+                        pris: 129,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                         finnished: false,
@@ -185,7 +234,7 @@ const model = {
                 [
                     {
                         måltid: 'Taco',
-                        pris: 100,
+                        pris: 129,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                         finnished: false,
@@ -195,7 +244,7 @@ const model = {
                 [
                     {
                         måltid: 'Taco',
-                        pris: 100,
+                        pris: 129,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                         finnished: false,
@@ -205,7 +254,7 @@ const model = {
                 [
                     {
                         måltid: 'Taco',
-                        pris: 100,
+                        pris: 129,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                         finnished: false,
@@ -215,7 +264,7 @@ const model = {
                 [
                     {
                         måltid: 'Taco',
-                        pris: 100,
+                        pris: 129,
                         notWanted: [/*ikke ønsket ingr*/],
                         kommentar: '',
                         finnished: false,
@@ -230,7 +279,7 @@ const model = {
     completeOrder: [
         {
             måltid: 'Taco',
-            pris: 100,
+            pris: 129,
             notWanted: [/*ikke ønsket ingr*/],
             kommentar: '',
             waiter: 'Henrik',
@@ -238,7 +287,7 @@ const model = {
         },
         {
             måltid: 'Taco',
-            pris: 100,
+            pris: 129,
             notWanted: [/*ikke ønsket ingr*/],
             kommentar: '',
             waiter: 'Henrik',
@@ -246,7 +295,7 @@ const model = {
         },
         {
             måltid: 'Taco',
-            pris: 100,
+            pris: 129,
             notWanted: [/*ikke ønsket ingr*/],
             kommentar: '',
             waiter: 'Henrik',
