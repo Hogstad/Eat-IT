@@ -39,6 +39,10 @@ body {
     text-align: center;
     padding-top: 1.6%;
     background-color: #79a3b1;
+    box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+    transition: all .1s linear, line-height 0s linear;
+    background-position: 50% 100%, center;
+    transform-origin: bottom center;
 }
 .ordreButton {
     height: 30px;
@@ -78,6 +82,10 @@ select {
     top: 10.5%;
     left: 2%;
     background-color: #79a3b1;
+    box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #000 inset;
+    transition: all .1s linear, line-height 0s linear;
+    background-position: 50% 100%, center;
+    transform-origin: bottom center;
 }
 #oneDiv button {
     width: 80%;
